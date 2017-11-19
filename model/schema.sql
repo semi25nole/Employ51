@@ -12,7 +12,11 @@ CREATE TABLE users
 -- URLs - refer to links to Google Docs, Dropbox, etc, as we are not storing files on our server
 -- if_company distinguishes the user type/view/access
 
+<<<<<<< HEAD
+	id int NOT NULL AUTO_INCREMENT,
+=======
 	uid int NOT NULL AUTO_INCREMENT,
+>>>>>>> 6b347711dab163b64c0d034110f862ab6b5e4c34
 	fname varchar(255) NOT NULL,
     lname varchar(255) NOT NULL,
     email varchar(255) NOT NULL,
@@ -22,13 +26,43 @@ CREATE TABLE users
     doc2_url VARCHAR(255) DEFAULT NULL,
     doc3_url VARCHAR(255) DEFAULT NULL,
     if_company BOOLEAN DEFAULT false,
+<<<<<<< HEAD
+    
+	PRIMARY KEY (id)
+);
+
+
+
+=======
 	PRIMARY KEY (uid)
 );
 
+>>>>>>> 6b347711dab163b64c0d034110f862ab6b5e4c34
 -- table which holds jobs applied for
 CREATE TABLE jobs
 (
 -- Notes:
+<<<<<<< HEAD
+-- anything that starts with jobs is specific to the listing
+-- anything that starts with hr is specific to the hiring company's actions
+
+  id INT NOT NULL AUTO_INCREMENT,
+  company VARCHAR(255) NOT NULL,
+  job_salary DECIMAL(10, 2) DEFAULT NULL,
+  job_title VARCHAR(255) NOT NULL,
+  job_req LONGTEXT DEFAULT NULL,
+  job_extras LONGTEXT DEFAULT NULL,
+  job_edu LONGTEXT DEFAULT NULL,
+  job_loc LONGTEXT DEFAULT NULL,
+  job_url VARCHAR(255) DEFAULT NULL,
+  job_posted_start DATE DEFAULT NULL,
+  job_posted_end DATE DEFAULT NULL,
+  hr_feedback LONGTEXT DEFAULT NULL,
+   hr_if_hired BOOLEAN DEFAULT false,
+  
+  PRIMARY KEY (id)
+);
+=======
 -- Anything that starts with hr is specific to the hiring company's actions
 -- Field Mapping: To the right is the JSON object fields, the first array element results (with 0 showing), and the data types  in parentheses.
 -- db table created in same order of JSON responce (see test.json)
@@ -56,3 +90,4 @@ CREATE TABLE jobs
 
 
 -- api call example: see test.json
+>>>>>>> 6b347711dab163b64c0d034110f862ab6b5e4c34
