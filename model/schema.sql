@@ -12,7 +12,7 @@ CREATE TABLE users
 -- URLs - refer to links to Google Docs, Dropbox, etc, as we are not storing files on our server
 -- if_company distinguishes the user type/view/access
 
-	id int NOT NULL AUTO_INCREMENT,
+	uid int NOT NULL AUTO_INCREMENT,
 	fname varchar(255) NOT NULL,
     lname varchar(255) NOT NULL,
     email varchar(255) NOT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE users
     doc2_url VARCHAR(255) DEFAULT NULL,
     doc3_url VARCHAR(255) DEFAULT NULL,
     if_company BOOLEAN DEFAULT false,
-	PRIMARY KEY (id)
+	PRIMARY KEY (uid)
 );
 
 -- table which holds jobs applied for
@@ -33,8 +33,7 @@ CREATE TABLE jobs
 -- Field Mapping: To the right is the JSON object fields, the first array element results (with 0 showing), and the data types  in parentheses.
 -- db table created in same order of JSON responce (see test.json)
 
-  id INT NOT NULL AUTO_INCREMENT,
-  
+  jid INT NOT NULL AUTO_INCREMENT,  
   job_title VARCHAR(255) NOT NULL, -- listings.listing[0].title (string)
   job_desc LONGTEXT DEFAULT NULL, -- listings.listing[0].description (string - HTML)
   job_posted VARCHAR(255) DEFAULT NULL, -- listings.listing[0].post_date (string - Date/Time)
@@ -50,7 +49,9 @@ CREATE TABLE jobs
   job_url VARCHAR(255), -- listings.listing[0].url (string - HTML)
   hr_feedback LONGTEXT DEFAULT NULL,
   hr_if_hired BOOLEAN DEFAULT false,
-  PRIMARY KEY (id)
+  uid int, -- foreign key pointing to user ID
+  PRIMARY KEY (jid),
+  FOREIGN KEY (uid) REFERENCES users(uid)
 );
 
 
