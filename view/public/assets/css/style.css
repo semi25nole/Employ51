@@ -4,6 +4,11 @@ body {
     background-size: 100%;
 }
 
+.display-3 {
+    font-family: 'Monoton', cursive;
+    color: #92b558;
+}
+
 #navigation {
     position: absolute;
     left: 378px;
