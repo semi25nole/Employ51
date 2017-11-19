@@ -1,0 +1,367 @@
+// api call example:
+// https://authenticjobs.com/api/?api_key=eef2ebd00509e1f156de2fe3ea5065c8&method=aj.jobs.search&perpage=5&category=4&format=json
+
+{
+    "listings": {
+        "listing": [{
+                "id": "30039",
+                "title": "Web Developer who understands eCommerce and does fantastic work",
+                "description": "<p><p>We are a small ecommerce firm in downtown Salt Lake City that has a great time creating beautiful and effective webstores and sites for our clients. Our work environment is casual, friendly and collaborative. The perfect candidate needs to know web development and can code but also must have an eye for design (a rare combination, I know). We are growing and have some awesome opportunities in the near future.</p>\n<p>What we need is you, if you are a web developer loves to solve problems. We primarily use carts like Bigcommerce and Magento but also create a number of sites with WordPress, so you need to know PHP, javacript and how to use plug-ins, extensions and creativity to make those sites shine.</p>\n<p>If you are committed to doing good work and are reliable, come join us! You&rsquo;ll be an integral part of our team if you understand how modular and cool effective web development can be. When creating a site or a store, you grasp how to adapt the design with widgets and blocks and snippets so when we present to the client, they can easily maintain their store and will sing our praises.</p>\n<p>&nbsp;</p>\n<p>In summary, you are skilled in:</p>\n<ul>\n<li>PHP,&nbsp;MySQL,&nbsp;CSS, AJAX, Handle</li>\n<li>Javascript libraries (jQuery / MooTools / Prototype)</li>\n<li>e-commerce site structure</li>\n<li>working closely with designers and&nbsp;ability to accept constructive feedback and quickly adopt design concepts</li>\n<li>turning a Photoshop/Illustrator file into a living, breathing website, lickety-split</li>\n<li>effective verbal and written communications</li>\n<li>being a good team member, trustwothy, kind and helpful</li>\n<li>effective verbal and written communications</li>\n<li>source control: GIT or SVN</li>\n<li>would be nice to have: Experience with Ruby on Rails, Python, Scala, and other back-end programming languages, Django, HTML 5, REST and SOAP</li>\n</ul></p>",
+                "perks": "",
+                "howto_apply": "",
+                "post_date": "2017-11-17 14:28:14",
+                "relocation_assistance": 0,
+                "telecommuting": 0,
+                "category": {
+                    "id": "4",
+                    "name": "Front-end Engineering"
+                },
+                "type": {
+                    "id": "1",
+                    "name": "Full-time"
+                },
+                "company": {
+                    "id": "schawelcoles",
+                    "name": "SCHAWEL+COLES",
+                    "url": "http://www.schawelcoles.com",
+                    "type": null,
+                    "location": {
+                        "id": "saltlakecityutus",
+                        "name": "Salt Lake City, UT, US",
+                        "city": "Salt Lake City",
+                        "country": "US",
+                        "lat": "40.7608",
+                        "lng": "-111.891",
+                        "state": "UT"
+                    },
+                    "logo": "https://d2fcz5no062gar.cloudfront.net/logos/schawelcoles_1388684108.png",
+                    "hero": "https://d2fcz5no062gar.cloudfront.nethttps://authenticjobs.s3.amazonaws.com/uploads/heroes/af4ed5b0075b99d0a80ba89cdca13023/Matthew-Coles-448-3.jpg",
+                    "tagline": "WeCommerce. We partner with online sellers to heighten success."
+                },
+                "keywords": "sites,work,design,have,know,developer,written,verbal,store,site,when,good,need,also,development,team,effective,ecommerce,creating,libraries,quickly,feedback,constructive,accept,andnbspability,designers,closely,structureworking,prototypeecommerce,mootools",
+                "apply_url": "https://authenticjobs.com/apply/30039",
+                "url": "https://authenticjobs.com/jobs/30039/web-developer-who-understands-ecommerce-and-does-fantastic-work"
+            },
+            {
+                "id": "30037",
+                "title": "Creative Strategies Associate",
+                "description": "<p><p>Reporting to the Creative Strategies Manager, the Creative Strategies Associate will help develop, coordinate, and execute communications activities and initiatives for the Indivisible Project with a focus on design. This person would also assist with broader team-wide tasks, including maintaining and updating content on Indivisible websites, providing photo/video coverage of events, as well as any other projects as assigned.</p>\n<p>We are hiring for this position immediately. This position is full-time, with a salary range of $40,000-$50,000, commensurate with experience. Indivisible provides a robust benefits package including full medical/dental/vision/life coverage, a discounted gym membership, and a 401(k) plan.</p>\n<h3><strong>Responsibilities:</strong></h3>\n<p>Design/Content Creation:</p>\n<ul>\n<li>Work with internal and external stakeholders to transform written work and data into compelling visuals</li>\n<li>Help develop and implement the visual identity of Indivisible Project campaigns;Create, produce, and/or acquire assets including infographics, illustrations, video, still images, and audio</li>\n<li>Provide photo and video coverage of events, panels, and projects</li>\n<li>Provide support for weekly livestreams</li>\n</ul>\n<p>Other Communications Support:</p>\n<ul>\n<li>Support and facilitate coordination for campaigns across teams and with outside stakeholders</li>\n<li>Help maintain Indivisible.org and other Indivisible Project campaign sites</li>\n<li>Assist as needed with digital, writing, research, and organizational projects on discrete issue-related and electoral campaigns</li>\n<li>Other duties as assigned</li>\n</ul>\n<h3><strong>Qualifications:</strong></h3>\n<ul>\n<li>One to three years of related experience in a professional or volunteer capacity</li>\n<li>Proficiency with Google Docs, Sheets, and Slides</li>\n<li>Proficiency with Adobe Creative Suite (Illustrator, InDesign, Photoshop)</li>\n<li>Competency in basic HTML and CSS and/or experience maintaining web content through a CMS</li>\n<li>Experience coordinating project deliverables across teams and with outside stakeholders</li>\n<li>Excellent communication skills&mdash;Spanish language skills a plus</li>\n<li>Demonstrated ability to excel in a fast-paced, campaign-like environment</li>\n<li>Motivation and willingness to learn</li>\n<li>Alignment on the core values and strategy of the Indivisible Project</li>\n</ul>\n<p>Note: If you believe you can fulfill the job responsibilities, are a good match, and are excited by the position, but do not meet all of the qualifications listed above please still apply and emphasize any transferable skills in your resume.&nbsp;</p></p>",
+                "perks": "",
+                "howto_apply": "For a full list of opportunities, visit https://jobs.lever.co/indivisible",
+                "post_date": "2017-11-17 14:20:16",
+                "relocation_assistance": 0,
+                "telecommuting": 0,
+                "category": {
+                    "id": "3",
+                    "name": "Design &amp; User Experience"
+                },
+                "type": {
+                    "id": "1",
+                    "name": "Full-time"
+                },
+                "company": {
+                    "id": "indivisibleproject",
+                    "name": "Indivisible Project",
+                    "url": "https://www.indivisible.org/",
+                    "type": null,
+                    "location": {
+                        "id": "washingtondcus",
+                        "name": "Washington, DC, US",
+                        "city": "Washington",
+                        "country": "US",
+                        "lat": "38.8951",
+                        "lng": "-77.0364",
+                        "state": "DC"
+                    },
+                    "logo": "https://d2fcz5no062gar.cloudfront.net/assets/images/defaults/company-blank.png"
+                },
+                "keywords": "indivisible,project,creative,strategies,coverage,experience,including,position,other,content,events,skills,projects,outside,andor,video,still,across,maintaining,teams,communications,associate,develop,related,duties,apply,assignedqualificationsone,three,ye",
+                "apply_url": "https://jobs.lever.co/indivisible/3dd1a7e0-da91-418e-b086-5972d1ce76fd?lever-origin=applied&lever-source%5B%5D=AuthenticJobs",
+                "url": "https://authenticjobs.com/jobs/30037/creative-strategies-associate"
+            },
+            {
+                "id": "30032",
+                "title": "Front-End Web Developer",
+                "description": "<p><p>Breakthrough Design Group is looking for a Front-End Web Developer on a contract or part-time basis with potential for full-time hire.</p>\n<p>Your primary responsibilities will be development-related; converting designs and layouts for professional websites, web software applications, and other web/mobile applications as needed, producing Responsive HTML5, CSS3 &amp; JavaScript to implement these designs.&nbsp; You will also help with Search Engine Optimization upgrades, and custom WordPress theme development.</p>\n<p>Candidate must dream bigger than we do (and we dream big), and must live his/her life for love, character, and truth.&nbsp; Candidate must love people, see the value of a problem, and must have a desire to make something bigger, better out of their short time on this earth.</p>\n<p><strong style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;\">Requirements:</strong></p>\n<ul>\n<li><strong style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;\">Love for responsive, minimalist HTML5, CSS3, JS code<br /></strong></li>\n<li><strong style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;\">WordPress theme dev&nbsp;</strong>&ndash; Some familiarity, expert level not required<strong style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;\"><br /></strong></li>\n<li><strong style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;\">Currently live, demonstrable sites</strong></li>\n<li>Experience with Adobe Photoshop, Illustrator</li>\n<li>Experience in cross-browser compatibility in IE, Firefox, Safari, Chrome, Including Tablets, Phones, etc.</li>\n</ul>\n<p><strong style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;\">Pluses:</strong></p>\n<ul>\n<li>Deeper JavaScript, jQuery development</li>\n<li>Design experience (not required, but welcomed)</li>\n<li>Focus in page load speed</li>\n<li>Experience w/ PHP</li>\n</ul>\n<p><strong style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;\">Location:</strong></p>\n<ul>\n<li>Anywhere in the US, preferably near the East Coast.</li>\n</ul>\n<p><strong style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;\">Benefits:</strong></p>\n<ul>\n<li><strong style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;\">Flexible Family-First Scheduling -</strong> BDG exists to ensure the enduring health and happiness of our people, and their families.&nbsp; Each team member creates their own schedule, that may evolve and adjust as life demands.</li>\n<li><strong style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;\">Work can be done remotely</strong></li>\n<li>Vacation, Sick &amp; Holidays Included &ndash; After 6 months</li>\n<li><strong style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;\">Learning &amp; Advancement Included</strong>&nbsp;&ndash; An ongoing budget, and a portion of every team member&rsquo;s time may be devoted to their own desired learning project.</li>\n<li>Technology, Food, and Productivity Benefits &ndash; Provided as team member excels</li>\n<li><strong style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;\">Partnership / Commission / Bonus Pay</strong>&nbsp;&ndash; May be provided if person becomes a key team member.</li>\n<li><strong style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;\">Community Involvement</strong>&nbsp;&ndash; If desired, team member may participate in programs at BDG designed to help those in our community that need it.</li>\n</ul></p>",
+                "perks": "- Flexible Family-First Scheduling\n- Work can be done remotely\n- Vacation, Sick & Holidays Included\n- Learning & Advancement Included.\n- Technology, Food, and Productivity Benefits\n- Partnership / Commission / Bonus Pay\n- Community Involvement ",
+                "howto_apply": "",
+                "post_date": "2017-11-17 07:42:44",
+                "relocation_assistance": 0,
+                "telecommuting": 1,
+                "category": {
+                    "id": "4",
+                    "name": "Front-end Engineering"
+                },
+                "type": {
+                    "id": "5",
+                    "name": "Part-time"
+                },
+                "company": {
+                    "id": "breakthroughdesign",
+                    "name": "Breakthrough Design",
+                    "url": "http://breakthroughdesign.com/",
+                    "type": null,
+                    "location": {
+                        "id": "neareastcoastusa",
+                        "name": "Near East Coast USA"
+                    },
+                    "logo": "https://d2fcz5no062gar.cloudfront.net/assets/images/defaults/company-blank.png",
+                    "tagline": "We help you INSPIRE CHANGE"
+                },
+                "keywords": "team,must,their,member,time,responsive,html5,css3,javascript,help,frontend,applications,ndash,theme,people,dream,bigger,live,life,desired,love,provided,will,developer,ensure,creates,developmentdesign,adjust,experience,required",
+                "apply_url": "https://breakthroughdesign.com/join/",
+                "url": "https://authenticjobs.com/jobs/30032/front-end-web-developer"
+            },
+            {
+                "id": "30036",
+                "title": "Product Designer",
+                "description": "<p><p><strong>Overview</strong></p>\n<p>Creative Market is the platform where independent creators around the world buy and sell digital design assets. Our mission is to help creators around the world turn passion into opportunity. As a Product Designer, you will help make this mission a reality by building strategic growth initiatives within a cross-functional product team. You will collaborate with engineers, designers, researchers, and analysts on the entire product lifecycle. You will plan and design a range of small to large tests and features aimed at increasing our MoM growth rate and improving user experience.</p>\n<p><strong>Design Team Purpose</strong></p>\n<p>As a Product Designer, you are the embodiment of the design team&rsquo;s mission, vision, and principles. These should be reflected in all aspects of your work. You live &amp; breathe brilliant product design thinking and execution. You're passionate about a/b testing, conversion optimization, user experience design, and user research.</p>\n<p>Our mission is to create a unique, cohesive experience for our community through one unified design system. Our vision is to balance and improve long-term growth with great user experience across our products and brand.</p>\n<p><strong>Design Principles</strong></p>\n<p>1. Design For Everyone</p>\n<p>2. People Over Pixels</p>\n<p>4. One Brand To Rule Them All</p>\n<p>5. The Details Are The Design</p>\n<p>6. Design Is A Shared Responsibility</p>\n<p>7. Creativity Fosters Community</p>\n<h3>Responsibilities</h3>\n<ul>\n<li>Work close with your cross-functional product team to produce fast, effective cycles of product design work.</li>\n<li>Discover, research, and validate opportunities that can make a big impact for our business and users.</li>\n<li>Design clear and simple product design solutions. Navigate complex product system dynamics and user behaviors.</li>\n<li>Write detailed scopes for your design work. Produce realistic timelines for each design cycle required for the project to be completed and successful.</li>\n<li>Build a/b tests that iterate on our existing features and craft new features that are optimized for activation and retention by device.</li>\n<li>Balance using our product design system's elements, patterns, and interactions with evolving them.</li>\n<li>Recommend improvements to our design tools, process, and documentation.</li>\n<li>Own your work. Work closely with the design director to ensure best results.</li>\n</ul>\n<h3>Who You Are</h3>\n<ul>\n<li>Communicative: You start with listening and empathy. You keep others updated on all aspects of your work. You proactively reach out before critical questions or roadblocks become an issue. You speak and write with clarity and brevity. You articulate your decisions clearly, explaining what problems they solve and why.</li>\n<li>Collaborative: You honor and compliment the contributions of your peers. You value receiving and giving feedback. You believe great design is the result of good collaboration because design is a shared responsibility across the team.</li>\n<li>Professional: You hold yourself to high standards of decorum. Your productive, perceptive, honest, supportive, transparent, compassionate and self-controlled. You lack ego and put the best interests of the company and team above your own.</li>\n<li>Learner: You love learning and share what you discover with the team. You pursue tackling new challenges. You stay curious and open about what&rsquo;s possible.</li>\n<li>User-Focused: You always build things with the end-user in mind. You make sure the team is talking to the right users before, during, and after building product work. You take pride in removing friction at every point of the user journey in our product. You value the time and effort our users invest in our product.</li>\n<li>Detail-Oriented: You sweat the details because you know that millions of people rely on what you&rsquo;re designing. You balance big-picture thinking with polishing the tiny details. You ensure all details in the UX and UI design work are thorough before the build goes out the door.</li>\n<li>Systematic Thinker: You understand how all components of the system fit together to create a unified experience. You see how new projects will impact the larger system and are able to clearly communicate these dynamics to the project team.</li>\n<li>Passionate: You care about the creative and design communities. You take it to heart when you hear how your work helps our users achieve success or lessens their frustrations. It&rsquo;s natural for you to over deliver because you want to elevate Creative Market to a highly competitive state in the industry.</li>\n</ul>\n<h3>Skills Required</h3>\n<ul>\n<li>You have a well-rounded knowledge of product systems, design thinking, and what&rsquo;s possible to execute in code.</li>\n<li>You set a very high bar for product design execution, process, and documentation. You hold the entire team to the same standard.</li>\n<li>You deliver projects on time. You communicate well in advance if a due date needs to move and the reason. You are responsible for the efficiency and effectiveness of your work because the business depends on it.</li>\n<li>You balance qualitative and quantitative data in order to identify and solve complex problems that benefit our business and users. You have experience and passion for using data to improve user experience.</li>\n<li>You think deeply about product design decisions before delivering them to the team. You have a track record of being open to others solving design challenges alongside you. You mentor best practices in design thinking in the team.</li>\n<li>You have a strong desire to grasp the entire site from all our users&rsquo; perspectives: shops, buyers, affiliates, and visitors. You're committed to developing an acute understanding of their desires, motivations, and problems.</li>\n<li>You thrive in a fast-faced, dynamic environment. You work well in remote and office settings.</li>\n<li>You are comfortable in Adobe CC, Sketch, and various prototyping tools.</li>\n<li>You actively build relationships across the team.</li>\n</ul>\n<h3>Experiences Desired</h3>\n<ul>\n<li>You have 2+ years working on web and digital product design work. eCommerce and responsive design experience is preferred.</li>\n<li>You have a B.A. or B.F.A. in Design with a focus in one of the following areas: web, UI/UX, product design(or an equivalent level of education).</li>\n<li>You have experience working on a marketplace or eCommerce business.</li>\n<li>You have experience working in a startup environment.</li>\n</ul>\n<h3>We're Offering</h3>\n<ul>\n<li>Location: San Francisco preferred. Remote(U.S. only) opportunities available in the following states: CA, TX, NC, CO, WA and NY.</li>\n<li>Competitive compensation</li>\n<li>Stock options</li>\n<li>401(k) plan</li>\n<li>Medical, dental, and vision benefits</li>\n<li>Generous paid time off</li>\n<li>New workstation</li>\n</ul></p>",
+                "perks": null,
+                "howto_apply": "",
+                "post_date": "2017-11-17 07:27:45",
+                "relocation_assistance": 0,
+                "telecommuting": 1,
+                "category": {
+                    "id": "3",
+                    "name": "Design &amp; User Experience"
+                },
+                "type": {
+                    "id": "1",
+                    "name": "Full-time"
+                },
+                "company": {
+                    "id": "creativemarket",
+                    "name": "Creative Market",
+                    "url": "https://creativemarket.com/",
+                    "type": null,
+                    "location": {
+                        "id": "sanfranciscopreferredusremotecatxnccowanyonly",
+                        "name": "San Francisco preferred | U.S. Remote (CA, TX, NC, CO, WA, NY only)"
+                    },
+                    "logo": "https://d2fcz5no062gar.cloudfront.net/assets/images/defaults/company-blank.png",
+                    "tagline": "The world's marketplace for design"
+                },
+                "keywords": "design,product,work,your,have,experience,team,user,will,before,details,system,about,thinking,users,mission,features,working,business,vision,across,time,balance,growth,build,best,because,make,what,designer",
+                "apply_url": "https://jobs.lever.co/creativemarket/4d93b5d8-647e-448c-8090-660429156f9d",
+                "url": "https://authenticjobs.com/jobs/30036/product-designer"
+            },
+            {
+                "id": "30035",
+                "title": "Senior Javascript Engineer",
+                "description": "<p><div class=\"section section page-centered\" style=\"box-sizing: border-box; max-width: 760px; margin: 0px auto; padding: 20px 0px; position: relative; color: #515357; font-family: Lato; font-size: 16px;\">\n<div style=\"box-sizing: border-box;\"><span style=\"box-sizing: border-box; font-size: 16px;\">From its earliest days, Instructure has developed and deployed superior, easy-to-use software and we're about to do it again. In our continued fight against shoddy software, we're preparing to develop a new product and need the best to help us do it. If you're passionate about effective education that allows people to make new discoveries, share knowledge, and do big things then we should talk.</span></div>\n<div style=\"box-sizing: border-box;\">&nbsp;</div>\n<div style=\"box-sizing: border-box;\"><span style=\"box-sizing: border-box; font-size: 16px;\">We&rsquo;ve opened a new development office in Utah County that we&rsquo;re filling with cross-functional teams to build the next chapter in great Instructure software. We're hiring Senior JavaScript engineers in Utah County who are passionate about technology and education to build a new, next generation product for companies who want to invest in their employees.</span></div>\n<div style=\"box-sizing: border-box;\">&nbsp;</div>\n<div style=\"box-sizing: border-box;\"><span style=\"box-sizing: border-box; font-size: 16px;\">What's it like to work at Instructure? Our product team doesn't throw spec documents over an imaginary wall only to have engineering build something and throw it over another wall to QA. Our teams are collaborative &mdash; we sit together, brainstorm together, and build together because we believe that's the only way to make superior software. We're committed to innovation &mdash; so much so, in fact, that we schedule quarterly hack weeks to let individuals and teams build pet projects and aim for the fences with new, radical ideas.</span></div>\n<p style=\"box-sizing: border-box; margin: 17.5px 0px; padding: 0px; white-space: pre-wrap;\">&nbsp;</p>\n</div>\n<div class=\"section section page-centered\" style=\"box-sizing: border-box; max-width: 760px; margin: 0px auto; padding: 20px 0px; position: relative; color: #515357; font-family: Lato; font-size: 16px;\">\n<div style=\"box-sizing: border-box;\">\n<h3 style=\"box-sizing: border-box; font-stretch: normal; font-size: 18px; line-height: 1.4; -webkit-font-smoothing: antialiased; margin: 17.5px 0px; padding: 0px;\">What we do:</h3>\n<ul class=\"posting-requirements plain-list\" style=\"box-sizing: border-box; margin: 0px auto; padding: 0px;\">\n<ul style=\"box-sizing: border-box; margin: 0px auto; padding: 0px;\">\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">We&rsquo;re building innovative web applications. By leveraging single page application design, ES6, CSS3, and other cutting edge technologies, we hope to bring the richness of native desktop and mobile apps to the web.</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">We use the latest tools to support progressive browsers and companies: you can leave your IE6 hacks at home.</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">We are cloud native. For this job, that means bringing the fault-tolerant and high availability principles that power the cloud to the front-end to deliver lightning fast, ultra-reliable applications that delight our users.</li>\n</ul>\n</ul>\n</div>\n</div>\n<div class=\"section section page-centered\" style=\"box-sizing: border-box; max-width: 760px; margin: 0px auto; padding: 20px 0px; position: relative; color: #515357; font-family: Lato; font-size: 16px;\">\n<div style=\"box-sizing: border-box;\">\n<h3 style=\"box-sizing: border-box; font-stretch: normal; font-size: 18px; line-height: 1.4; -webkit-font-smoothing: antialiased; margin: 17.5px 0px; padding: 0px;\">What we look for:</h3>\n<ul class=\"posting-requirements plain-list\" style=\"box-sizing: border-box; margin: 0px auto; padding: 0px;\">\n<ul style=\"box-sizing: border-box; margin: 0px auto; padding: 0px;\">\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">Breadth of experience across languages and frameworks.</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">Deep knowledge of JavaScript, including the latest features in ES6.</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">Production experience with modern JS frameworks like React or Angular.</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">Demonstrated experience unit testing JavaScript applications to ensure application quality.</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">Capable communicators passionate about product development and user experience.</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">Autodidacts who love continual learning and exploration.</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">Engineering leaders who care about coding standards and writing lean, maintainable software.</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">7+ plus years of professional software development experience.</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">BS or greater in Computer Science preferred.</li>\n</ul>\n</ul>\n</div>\n</div>\n<div class=\"section section page-centered\" style=\"box-sizing: border-box; max-width: 760px; margin: 0px auto; padding: 20px 0px; position: relative; color: #515357; font-family: Lato; font-size: 16px;\">\n<div style=\"box-sizing: border-box;\">\n<h3 style=\"box-sizing: border-box; font-stretch: normal; font-size: 18px; line-height: 1.4; -webkit-font-smoothing: antialiased; margin: 17.5px 0px; padding: 0px;\">Get in on all the awesome at Instructure.</h3>\n<ul class=\"posting-requirements plain-list\" style=\"box-sizing: border-box; margin: 0px auto; padding: 0px;\">\n<ul style=\"box-sizing: border-box; margin: 0px auto; padding: 0px;\">\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">Competitive salary, equity, and 401k&nbsp;</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">Employee stock purchase plan</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">100% paid medical, dental, disability, and life insurance&nbsp;</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">HSA program, vision, voluntary life, and AD&amp;D&nbsp;</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">Tuition reimbursement</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">Paid time off, 9 paid holidays, and flexible work schedules&nbsp;</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">Gym club memberships and rewards-based fitness tracking&nbsp;&nbsp;</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">Macbooks</li>\n<li style=\"box-sizing: border-box; margin: 8px 0px 8px 17px; padding: 0px; list-style-position: outside; list-style-type: disc;\">Food, lots of food</li>\n</ul>\n</ul>\n<p>&nbsp;</p>\n<p style=\"text-align: left;\">We&rsquo;ve always believed in hiring the most awesome people and treating them right.&nbsp;<span style=\"box-sizing: border-box; font-size: 15px;\">We know that the more diverse we are, the more diverse our ideas will be a</span><span style=\"box-sizing: border-box; font-size: 14.6667px;\">nd when we openly welcome those ideas, our environment is better and our business is stronger</span></p>\n<p style=\"text-align: left;\">At Instructure we participate in E-Verify and yes, in case you didn't catch it from the above, we are an Equal Opportunity Employer.</p>\n</div>\n</div></p>",
+                "perks": "Equity,\nEmployee stock purchase plan,\n100% paid medical, dental, disability, and life insurance, \nHSA program, vision, voluntary life, and AD&D, \nTuition reimbursement,\nPaid time off, 9 paid holidays, and flexible work schedules, \nGym club memberships and rewards-based fitness tracking , \nMacbooks,\nFood, lots of food.\n",
+                "howto_apply": "",
+                "post_date": "2017-11-16 17:05:45",
+                "relocation_assistance": 1,
+                "telecommuting": 0,
+                "category": {
+                    "id": "4",
+                    "name": "Front-end Engineering"
+                },
+                "type": {
+                    "id": "1",
+                    "name": "Full-time"
+                },
+                "company": {
+                    "id": "instructure",
+                    "name": "Instructure",
+                    "url": "http://Instructure.com",
+                    "type": null,
+                    "location": {
+                        "id": "pleasantgroveutus",
+                        "name": "Pleasant Grove, UT, US",
+                        "city": "Pleasant Grove",
+                        "country": "US",
+                        "lat": "40.3641",
+                        "lng": "-111.739",
+                        "state": "UT"
+                    },
+                    "logo": "https://d2fcz5no062gar.cloudfront.net/assets/images/defaults/company-blank.png",
+                    "tagline": "INSTRUCTURE makes software that makes people smarter."
+                },
+                "keywords": "about,software,build,product,javascript,were,instructure,development,together,applications,passionate,teams,experience,county,utah,next,hiring,companies,work,senior,throw,life,wall,only,knowledge,mdash,awesome,application,native,latest",
+                "apply_url": "https://jobs.lever.co/instructure/f10f4525-ca0c-4a18-a41f-49f49166b24f/apply?lever-source=authenticjobs",
+                "url": "https://authenticjobs.com/jobs/30035/senior-javascript-engineer"
+            },
+            {
+                "id": "30034",
+                "title": "Remote React Native Engineer",
+                "description": "<p><p>We&rsquo;re looking for talented React Native engineers to partner with amazing product companies to work as part of a team on React Native apps for iOS and Android. We regularly partner with Y Combinator funded product companies that place a high value on engineering. Strong communication and documentation skills are needed as this is a fast paced engineering environment. At least 3 months of React Native experience is required and full stack experience with Rails or Node.js is a plus (Apollo Client/GraphQL experience a huge plus).</p>\n<p>&nbsp;</p>\n<p>While we prefer candidates that have experience in native Android (Java) or iOS (Objective C), it isn&rsquo;t required. We are hiring for both remote and full time onsite in San Francisco. Please designate in the application which role you are interested in (or both if you&rsquo;re open to either).</p>\n<p>&nbsp;</p>\n<h3>For Remote Contractors</h3>\n<p>Contract lengths vary depending on the project, but range from 1 to 3 months (some last as long as 6 months). We also have contract to hire roles available, where after a short contract the company hires you full time remotely. The majority of our clients are in the San Francisco area so the closer to that timezone the better. You must be living in North America, South America or Europe.</p>\n<p>&nbsp;</p>\n<h3>For Full Time Roles Onsite in San Francisco</h3>\n<p>You must be living in San Francisco or be willing to relocate. Please provide your requested annual salary range in the application.</p>\n<p>&nbsp;</p>\n<p><strong>Requirements:</strong></p>\n<ul>\n<li>You must be living in North America, South America or Europe</li>\n<li>Fluent with both verbal and written English</li>\n<li>React Native code samples you can share OR willingness to complete a 6-8 hour code challenge (priority will be given to candidates that can provide code samples)</li>\n<li>30-40 hours per week of availability</li>\n<li>Mid-Senior or Senior level Position (4+ years of professional experience)</li>\n<li>3+ months of React Native experience (with a production app)</li>\n</ul>\n<p><strong>Nice to have's:</strong></p>\n<ul>\n<li>Full stack experience (Rails or Node.js)</li>\n<li>Professional Obj-C or Java experience (Helpful when working with native modules using React Native)</li>\n<li>6+ months of React Native experience</li>\n<li>Experience with Apollo Client &amp; GraphQL</li>\n</ul>\n<p>Onsite travel is not required but is often appreciated by our partners (Please let us know if that is an option)</p>\n<p>We have other React &amp; React Native roles and we'll invite you to join our developer community if we think you are a good fit!</p></p>",
+                "perks": "",
+                "howto_apply": "",
+                "post_date": "2017-11-16 16:33:40",
+                "relocation_assistance": 0,
+                "telecommuting": 1,
+                "category": {
+                    "id": "4",
+                    "name": "Front-end Engineering"
+                },
+                "type": {
+                    "id": "1",
+                    "name": "Full-time"
+                },
+                "company": {
+                    "id": "g2iinc",
+                    "name": "G2i Inc",
+                    "url": "https://g2i.co",
+                    "type": null,
+                    "logo": "https://d2fcz5no062gar.cloudfront.nethttps://authenticjobs.s3.amazonaws.com/uploads/logos/7bb5d5990699eabc668b651c80341f6e/thumb/g2i-web.png",
+                    "tagline": "G2i is talent platform for engineers focused on the React ecosystem."
+                },
+                "keywords": "native,react,experience,months,america,full,remote,roles,code,please,francisco,time,have,must,required,living,ios,stack,north,south,provide,contract,range,partner,android,java,product,candidates,companies,apollo",
+                "apply_url": "https://jobs.lever.co/g2i/58bf69ab-f263-4750-9023-9b88bee37159/apply",
+                "url": "https://authenticjobs.com/jobs/30034/remote-react-native-engineer"
+            },
+            {
+                "id": "30033",
+                "title": "Software Engineer (React/Redux)",
+                "description": "<p><p><strong>Software Engineer (React/Redux)</strong></p>\n<p>&nbsp;</p>\n<p><strong>Who we are</strong></p>\n<p>At Broadway.com the result of your work will be seen and used by millions of people &mdash; tourists, theater lovers, students, groups, etc. Your creative and analytical efforts will play a&nbsp;role in their overall Broadway experience.</p>\n<p>We believe in user-centered design principles. We employ the \"don't make me think\" user experience philosophy. We use our creativity to elevate the experience, and we test to validate our decisions to ensure the quality of the products we build.</p>\n<p>From the technology side we use AWS, Django, ReactJS, Python, Swift, MySQL, Webpack, SASS&hellip; among other things. Our team is passionate, professional, and all care deeply about our customer experience and the quality of the software that supports it.</p>\n<p>We also go to conferences, offer plenty of learning resources, enjoy summer Fridays, and a handful of other fun things we hope to tell you about.</p>\n<p>&nbsp;</p>\n<p><strong>Who you are</strong></p>\n<p>You are a professional. You care about your work and how it affects others. You love to create.</p>\n<p>You have developed, deployed, and supported a production React application.</p>\n<p>You have excellent coding skills, commitment to web standards, and practice human-centered design principles.</p>\n<p>You are an excellent communicator.</p>\n<p>You are fluent with HTML/CSS/JS. You know what BEM, OOCSS and SMACSS are, and why they are important.</p>\n<p>You are very comfortable with Git or similar source control solutions.</p>\n<p>You test your code across browsers, platforms, and devices.</p>\n<p>You're able to work independently. While you're a manager-of-one, you also have experience working in a team environment.</p>\n<p>You enjoy collaboration and the sharing of ideas and concepts.</p>\n<p>You are able to quickly relay feedback from a design session or stakeholder meeting into a prototype, and continue to work with the team towards shipping the final design.</p>\n<p>You have a passion for quality and an eye for detail. You obsess over the customer's experience and the usability of the product you are building.</p>\n<p>&nbsp;</p>\n<p><strong>What you'll do</strong></p>\n<p>If you were working for us, here are some of the things you may have done last week, among other things&hellip;</p>\n<p>● Participated in product reviews with your team and stakeholders.</p>\n<p>● Develop and collaborate on React/Redux product iterations</p>\n<p>● Deployed a new experience you&rsquo;ve been working on that went through prototyping, and testing, but failed in a live a/b experiment&hellip; and learned from it.</p>\n<p>● Pitched a different implementation of a design deliverable you received by prototyping your concept.</p>\n<p>● Developed Javascript code that interfaces with an external API and handle the API response gracefully, creating an efficient and fluid customer experience.</p>\n<p>● Worked closely with a QA Analyst to review a bug in your code.</p>\n<p>● Reviewed how a new design fits into our existing UI library, worked towards reducing duplicate styles, removed extraneous elements, and kept your code lean and DRY.</p>\n<p>● Maintained the UI pattern library and updated existing, legacy code that doesn&rsquo;t comply.</p>\n<p>● Worked within constraints of business requirements and timelines.</p>\n<p>● Created a git branch to work on a new feature.</p>\n<p>● Identified new opportunities to improve the customer experience.</p>\n<p>● Other front-end development related tasks as needed.</p>\n<p>&nbsp;</p>\n<p><strong>Nice to haves</strong></p>\n<p>● Experience working on a Django web project.</p>\n<p>● Experience working with e-commerce applications.</p>\n<p>● Experience with MVVM or MVC frameworks (ReactJS, Angular, Backbone, etc)</p>\n<p>&nbsp;</p>\n<p><strong>Tools We Use</strong></p>\n<p>● Slack</p>\n<p>● Invision</p>\n<p>● Django</p>\n<p>● Javascript</p>\n<p>● ReactJS and Preact</p>\n<p>● Sass</p>\n<p>● Swift</p>\n<p>● Git</p>\n<p>● Jira</p>\n<p>● Amazon Web Services</p>\n<p>● MySQL</p>\n<p>● and many others&hellip;</p>\n<p>&nbsp;</p>\n<p><strong>To Apply</strong></p>\n<p>Include a link to any public code examples (websites, Github, etc) you may have.</p>\n<p>1. Send a PDF of your resume to hire@broadway.com</p>\n<p>* This is not a telecommute job. *</p></p>",
+                "perks": null,
+                "howto_apply": "Send a PDF of your resume to hire@broadway.com",
+                "post_date": "2017-11-16 14:03:03",
+                "relocation_assistance": 0,
+                "telecommuting": 0,
+                "category": {
+                    "id": "3",
+                    "name": "Design &amp; User Experience"
+                },
+                "type": {
+                    "id": "1",
+                    "name": "Full-time"
+                },
+                "company": {
+                    "id": "broadwaycom",
+                    "name": "Broadway.com",
+                    "url": "http://broadway.com",
+                    "type": null,
+                    "location": {
+                        "id": "newyorknyus",
+                        "name": "New York, NY, US",
+                        "city": "New York",
+                        "country": "US",
+                        "lat": "40.7143",
+                        "lng": "-74.006",
+                        "state": "NY"
+                    },
+                    "logo": "https://d2fcz5no062gar.cloudfront.net/logos/broadwaycom_1458760027.png"
+                },
+                "keywords": "experience,your,code,have,working,work,design,team,other,worked,customer,things,reactjs,django,quality,software,product,reactredux,about,will,swift,mysql,among,towards,javascript,professional,care,from,prototyping,also",
+                "apply_url": "https://authenticjobs.com/apply/30033",
+                "url": "https://authenticjobs.com/jobs/30033/software-engineer-react-redux"
+            },
+            {
+                "id": "30031",
+                "title": "Senior DevOps Engineer",
+                "description": "<p><p><strong>Senior DevOps Engineer</strong></p>\n<p>At Athos</p>\n<p><strong>About us:</strong><strong><br /></strong>Athos was developed to help athletes and coaches make smarter, data-driven decision</p>\n<p>so they can achieve their performance goals. We are innovative, goal-driven individuals</p>\n<p>striving to change the game of training and keep athletes performing at their highest</p>\n<p>potential. Our mission : build better athletes.</p>\n<p>&nbsp;</p>\n<p>Interested in joining? We&rsquo;re looking for highly-motivated and driven employees who help us stay on the cutting edge of creativity and innovation.</p>\n<p>&nbsp;</p>\n<p><strong>The Role:</strong></p>\n<p>As a Senior DevOps Engineer you will help support our data platform that includes web applications, platform API, web services, data processing pipelines, data security and data warehousing. You will work closely with software engineering and research teams to deploy their code, provide operational support for or new and existing applications and debugging production issues. You should be able to perform functions required to deploy, configure, support and troubleshoot issues with web application environments.</p>\n<p><br /><strong>Our Ideal Candidate:</strong></p>\n<p>&nbsp;</p>\n<ul>\n<li>Has a BS in Computer Science, Engineering, another science or equivalent experience</li>\n<li>Has 8+ years of professional experience in DevOps or related field</li>\n<li>Has strong scripting or programming in Python or similar high level language</li>\n<li>Has knowledge of Flask and other Python frameworks</li>\n<li>Has knowledge of Node.js</li>\n<li>Has strong experience with AWS services specifically in:</li>\n<ul>\n<li>IAM, AWS data security offerings, RDS, S3, DynamoDB, Kinesis and EFS</li>\n</ul>\n<li>Has strong experience in web server software (e.g. Apache, Nginx, HAproxy)</li>\n<li>Is an expert in configuration management tools (e.g. Puppet, Docker, Ansible)</li>\n<li>Is an expert in Relational database/NoSql cluster administration</li>\n<li>Is an expert in SSH, DNS, Server security including access control and logging</li>\n<li>Has good experience in service provisioning and continuous integration and deployment pipelines</li>\n<li>Has an affinity for open environments that encourage education, cooperation and</li>\n<li>teamwork</li>\n<li>Is capable of embracing guidance from team members</li>\n<li>Is detail oriented with excellent written and verbal communication</li>\n</ul>\n<p><strong><br /><br /></strong></p>\n<p><strong>You Will Own:</strong><strong><br /><br /></strong></p>\n<ul>\n<li>Up-time of our web applications and services</li>\n<li>Deploying web applications to production environment</li>\n<li>Monitoring system health, prevent and troubleshoot security related issues</li>\n<li>Communicating with Dev teams in the event of an incident</li>\n<li>Understanding website and application capacity planning requirements and ensure web applications are deployed in a scalable architecture</li>\n<li>Managing system backups for our databases, applications and infrastructure</li>\n<li>Ensuring proper monitoring is in place for all environments</li>\n<li>Building and maintaining our CI/CD pipeline</li>\n<li>Identifying automation opportunities, design and develop solutions to improve operations efficiency</li>\n<li>Troubleshoot complex issues quickly and effectively</li>\n<li>Make recommendations and drive the implementation of processes/practices to improve operational efficiency and reduce risk</li>\n</ul>\n<p><br /><strong>What We Can Offer:</strong><strong><br /><br /></strong></p>\n<ul>\n<li>Fun, creative and collaborative work environment</li>\n<li>Medical insurance through Cigna</li>\n<li>Dental &amp; vision insurance through Guardian</li>\n<li>Life insurance</li>\n<li>Catered lunches and exceptional snack game</li>\n<li>In-house personal training, mobility workshops &amp; yoga</li>\n<li>Long-term disability</li>\n<li>Flexible spending account</li>\n<li>Commuter benefits</li>\n<li>401(k)</li>\n<li>Mobile phone reimbursement</li>\n<li>Flexible PTO</li>\n</ul>\n<p><strong>Athos</strong>&nbsp;<strong>is an equal opportunity employer and values diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status or disability status.</strong></p></p>",
+                "perks": null,
+                "howto_apply": "",
+                "post_date": "2017-11-16 13:05:57",
+                "relocation_assistance": 0,
+                "telecommuting": 0,
+                "category": {
+                    "id": "2",
+                    "name": "Back-end Engineering"
+                },
+                "type": {
+                    "id": "1",
+                    "name": "Full-time"
+                },
+                "company": {
+                    "id": "athos",
+                    "name": "Athos",
+                    "url": "http://www.liveathos.com",
+                    "type": null,
+                    "location": {
+                        "id": "redwoodcitycaus",
+                        "name": "Redwood City, CA, US",
+                        "city": "Redwood City",
+                        "country": "US",
+                        "lat": "37.4852",
+                        "lng": "-122.236",
+                        "state": "CA"
+                    },
+                    "logo": "https://d2fcz5no062gar.cloudfront.net/assets/images/defaults/company-blank.png"
+                },
+                "keywords": "applications,data,devops,experience,security,senior,their,expert,strong,support,will,issues,status,help,improve,teams,services,through,insurance,work,software,engineering,knowledge,deploy,server,operational,production,python,troubleshoot,application",
+                "apply_url": "http://grnh.se/qb3tfr1",
+                "url": "https://authenticjobs.com/jobs/30031/senior-devops-engineer"
+            },
+            {
+                "id": "30030",
+                "title": "Web Project Coordinator/Dev",
+                "description": "<p><p>POSITION SUMMARY</p>\n<p>The College of Business is seeking a Web Project Coordinator/Developer. This is a full-time (1.0 <span class=\"caps\">FTE</span>), 12-month, fixed term professional faculty position. Reappointment is at the discretion of the Dean.</p>\n<p>This position is responsible for planning and project management for the development and technical maintenance of the College&rsquo;s web presence. The individual reports to the Director of Marketing, and should have an artistic sensibility, as well as the technical skills to maintain a dynamic, compelling and functional website. The incumbent will collaborate with the marketing and communication team as well as leadership in the College of Business.</p>\n<p>The position also has the expectation of working closely with the Associate Dean for Faculty and Research and the faculty to communicate the impact and applicability of their research to business and industry. In support of the College&rsquo;s focus on providing research-based education and providing students with quality experiential learning opportunities, this position has a responsibility for providing professional instruction and training on best practices for online experiences, web design and web development for students working on the College&rsquo;s marketing and recruitment team and on the digital marketing student club.</p>\n<p>The position is also responsible for being the first point of contact for and liaison with Central Web Services at the university.</p>\n<p>Plans, develops, coordinates, administers and executes programs and projects supporting the online presence of the <span class=\"caps\">OSU</span> College of Business.</p>\n<p>Provides technical support in the production of multimedia-based layouts, graphics, animations, video and sound; designs web interfaces and develops layout design/content; selects illustrative materials for use ensuring consistency, accuracy and compliance with all standards.</p>\n<p>Works closely with college departments to maintain and produce web pages using university&rsquo;s content management system that help recruit future students, and communicate the impact on industry partners of the teaching, research and service activities of faculty.</p>\n<p>Instructs, trains, and mentors student employees on best practices related to online marketing, web design and development. Provides mentoring for the College&rsquo;s students interested in pursuing web development careers.</p>\n<p>Establishes and maintains collaborations and partnerships with internal and external stakeholders, including Central Web Services, to help build and leverage expertise and resources.</p>\n<p>Provides technical consultative suggestions and recommendations to users for continued enhancements to web content and informational areas.</p>\n<p>Works closely with end users to understand requirements; and develops and presents initial design ideas and associated tools, testing functionality to ensure objectives are achieved.</p>\n<p>Identifies and troubleshoots errors and/or problems with web-based applications; works collaboratively with involved stakeholders to facilitate timely resolution; escalates as appropriate.</p>\n<p>Remains abreast of online initiatives and trends within scope of expertise to provide ideas, guidance and recommendations.</p>\n<p>As requested, identifies appropriate database elements necessary for reporting; prepares queries and executes for results; formats for presentations as requested.</p>\n<p>Understands and responds to University and College of Business brand guidelines; understands and responds to University web standards.</p>\n<p>This position may be based in Corvallis or in Portland, OR. Regardless of primary work location, some travel to the Corvallis campus and/or Portland to participate in meetings will be expected.</p>\n<p>POSITION DUTIES</p>\n<p>40% Development of the College of Business Website, College of Business Microsites and College of Business email campaigns to execute the College&rsquo;s online marketing plans. This work includes contributing to the information architecture design and conceptualization for pages utilizing the new template package, working closely with end-users to test functionality, and ultimately implementing the new theme through the College of Business website.</p>\n<p>25% Technical Support. This work involves providing overall technical support to projects initiated by the marketing and communication team in the production of online projects; providing design and development support for projects that will improve the College&rsquo;s online presence.</p>\n<p>20% Website Maintenance and Troubleshooting. This work includes troubleshooting errors and facilitating timely solutions to problems, as well as making updates to websites as needed.</p>\n<p>10% &ndash; Supervision and Development Instruction. The position will provide professional instruction and training to the College&rsquo;s marketing and communication and recruitment student employees, including planning and scheduling work; setting priorities; monitoring quality; providing feedback; answering questions; helping with problem resolution; training and mentoring. This position is also responsible for providing rewards and discipline as appropriate; evaluating and responding to student grievances; teaching online marketing tactics, front-end web development, documentation, collecting user requirements and business analysis; and otherwise supporting student learning.</p>\n<p>5% Other duties as assigned</p>\n<p>MINIMUM QUALIFICATIONS</p>\n<p>&bull; Bachelor&rsquo;s degree in Computer Science, Graphic Design, Interactive Design, Web Development or a related field <span class=\"caps\">AND</span> three years&rsquo; experience with website management and <span class=\"caps\">HTML</span>/<span class=\"caps\">CSS</span> development experience, OR seven years of related web experience<br /> &bull; Professional work experience in business, technology, or digital agency<br /> &bull; Strong working knowledge of content management systems like Drupal and WordPress<br /> &bull; Experience developing and working with <span class=\"caps\">HTML</span>, <span class=\"caps\">XML</span>, <span class=\"caps\">PHP</span>, JavaScript, jQuery<br /> &bull; Experience developing <span class=\"caps\">HTML</span> emails with focus on cross-platform compatibility<br /> &bull; Experience with developing and testing mobile and responsive web application<br /> &bull; Solid understanding of design tools such as Sketch and the Adobe Creative Cloud suite<br /> &bull; Solid understanding of current UI/UX trends and best practices<br /> &bull; Excellent written and verbal communication skills<br /> &bull; Ability to interpret technical ideas for a non-technical audience<br /> &bull; Ability to manage and collaborate on long-term web projects with multiple directors and departments</p>\n<p>WORK CONDITIONS/WORK SCHEDULE</p>\n<p>This position can be based in Corvallis or Portland, OR. Regardless of primary work location, some travel to campus and/or Portland to participate in meetings will be expected.</p>\n<p>APPLICATION INSTRUCTIONS</p>\n<p>To ensure full consideration, applications must be received by November 24, 2017. Applications will continue to be accepted after the full consideration date, until a sufficient applicant pool has been achieved or the position is filled. The closing date is subject to change without notice to applicants.</p>\n<p>When applying you will be required to attach the following electronic documents:</p>\n<p>1) A resume/CV that includes the names of at least three professional references, their e-mail addresses and telephone contact numbers (upload as &lsquo;Other Document&rsquo; if not included with your resume/vitae).</p>\n<p>2) A cover letter indicating how your qualifications and experience have prepared you for this position.</p>\n<p>For additional information please contact: Jessi Hibsman at jessi.hibsman@oregonstate.edu.</p>\n<p><span class=\"caps\">OSU</span> commits to inclusive excellence by advancing equity and diversity in all that we do. We are an Affirmative Action/Equal Opportunity employer, and particularly encourage applications from members of historically underrepresented racial/ethnic groups, women, individuals with disabilities, veterans, <span class=\"caps\">LGBTQ</span> community members, and others who demonstrate the ability to help us achieve our vision of a diverse and inclusive community.</p>\n<p>Offers of employment are contingent upon meeting all minimum qualifications.</p></p>",
+                "perks": "Medical, dental, life, and disability insurance; Staff tuition reduction with family transfer option; Employee pension and retirement programs; Health and work/life balance programs\n",
+                "howto_apply": "",
+                "post_date": "2017-11-16 12:46:03",
+                "relocation_assistance": 0,
+                "telecommuting": 0,
+                "category": {
+                    "id": "3",
+                    "name": "Design &amp; User Experience"
+                },
+                "type": {
+                    "id": "1",
+                    "name": "Full-time"
+                },
+                "company": {
+                    "id": "oregonstateuniversitycollegeofbusiness",
+                    "name": "Oregon State University College of Business",
+                    "url": "http://business.oregonstate.edu/",
+                    "type": null,
+                    "location": {
+                        "id": "corvallisorportlandor",
+                        "name": "Corvallis or Portland, OR"
+                    },
+                    "logo": "https://d2fcz5no062gar.cloudfront.net/assets/images/defaults/company-blank.png",
+                    "hero": "https://d2fcz5no062gar.cloudfront.nethttps://authenticjobs.s3.amazonaws.com/uploads/heroes/d221ade706188e12bcf0126a6d1621a4/OSU_COB_horizontal_Black_orange wordmark.jpg"
+                },
+                "keywords": "position,development,bull,college,business,marketing,online,experience,design,work,providing,collegersquos,technical,will,support,professional,student,projects,working,website,management,communication,students,portland,closely,applications,ideas,content,t",
+                "apply_url": "http://jobs.oregonstate.edu/postings/51933",
+                "url": "https://authenticjobs.com/jobs/30030/web-project-coordinator-dev"
+            },
+            {
+                "id": "30029",
+                "title": "Software Engineer",
+                "description": "<p><div>\n<p dir=\"ltr\">Software Engineer</p>\n<p dir=\"ltr\">At Stealth Startup - Funded by Tier 1 VCs</p>\n<p dir=\"ltr\">About us:<br />We are a VC-funded, commercial stage startup developing a Stanford University technology for measuring protein expression involving signal processing, imaging, and motion control.<br /><br /></p>\n<p dir=\"ltr\">The Role:<br />You are a creative, capable software engineer. You will be working with the firmware team to write instrument control software, define an API and implement it. You are not surprised when your code works the first time, because you&rsquo;ve already tested each module. You thrive in a startup environment where you get to work with really smart people from a wide variety of disciplines, are willing to help figure out the specifications and API. You like an environment where you can move fast without a lot of external requirements, because you are capable of putting in place appropriate structure and following best practices without people looking over your shoulder. You enjoy working in an Agile environment where you frequently roll your work out to in-house users. You document.</p>\n<p dir=\"ltr\"><br />Our Ideal Candidate Has:<br /><br /></p>\n<ul>\n<li dir=\"ltr\">\n<p dir=\"ltr\">BS or MS in engineering, computer science, or physics.</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">3 - 5 years professional software development in a structured environment.</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">TDD &amp; unit testing, project tracking tools, Agile environment.</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">Setting up an environment (automated builds and regression tests) and design controls.</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">Expertise writing applications in C++.</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">At least one software project from beginning to product shipment.</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">Node.js or other javascript experience desirable.</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">Open source contributions a plus.</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">Database (mysql, mongoDB, etc) experience a plus.</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">Excellent oral and written communication skills.</p>\n</li>\n</ul>\n<p dir=\"ltr\"><br />You Will:<br /><br /></p>\n<ul>\n<li dir=\"ltr\">\n<p dir=\"ltr\">Develop software and user interface for non-engineers to control a complicated instrument.</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">Help develop a build/unit test/regression test environment</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">Closely collaborate with an interdisciplinary team of scientists, analysts and engineers to generate requirements for data acquisition and user interface.</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">Contribute to the design and development of capabilities such as automating calibrations and monitoring instrument performance.</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">Help improve existing software, and drive engineering solutions from concept to production.</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">Drive engineering solutions from concept to production</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">Employ software best practices including design documentation, issue tracking and unit testing.</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">Participate in code reviews.</p>\n</li>\n</ul>\n<p dir=\"ltr\"><br />What We Can Offer:<br /><br /></p>\n<ul>\n<li dir=\"ltr\">\n<p dir=\"ltr\">Medical, Dental, Vision and 401k matching.</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">Fun, creative and collaborative work environment</p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\">Trust in you to do things right</p>\n</li>\n</ul>\n<p dir=\"ltr\">The company is an equal opportunity employer and values diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status or disability status.</p>\n</div>\n<p>Play with the <a href=\"http://rubiks-cu.be/#simulator\" target=\"_blank\" rel=\"noopener\">Rubik Cube simulator</a> online! Drag the pieces with your mouse to unjumble the puzzle.</p></p>",
+                "perks": null,
+                "howto_apply": "",
+                "post_date": "2017-11-16 11:54:48",
+                "relocation_assistance": 0,
+                "telecommuting": 0,
+                "category": {
+                    "id": "2",
+                    "name": "Back-end Engineering"
+                },
+                "type": {
+                    "id": "1",
+                    "name": "Full-time"
+                },
+                "company": {
+                    "id": "stealthstartupfundedbytier1vcs",
+                    "name": "Stealth Startup - Funded By Tier 1 VCs",
+                    "url": "https://www.thesourcery.com/job-seekers/?gh_jid=880316",
+                    "type": null,
+                    "location": {
+                        "id": "menloparkcaus",
+                        "name": "Menlo Park, CA, US",
+                        "city": "Menlo Park",
+                        "country": "US",
+                        "lat": "37.4538",
+                        "lng": "-122.182",
+                        "state": "CA"
+                    },
+                    "logo": "https://d2fcz5no062gar.cloudfront.net/assets/images/defaults/company-blank.png"
+                },
+                "keywords": "software,environment,from,design,startup,your,engineering,where,work,without,control,code,because,concept,solutions,best,requirements,team,practices,agile,user,development,unit,engineer,project,tracking,experience,instrument,people,working",
+                "apply_url": "http://grnh.se/5aifqc1",
+                "url": "https://authenticjobs.com/jobs/30029/software-engineer"
+            }
+        ],
+        "total": 86,
+        "perpage": "10",
+        "page": 1,
+        "pages": 9,
+        "last_update": "2017-11-17T14:28:14-06:00"
+    },
+    "stat": "ok"
+}
