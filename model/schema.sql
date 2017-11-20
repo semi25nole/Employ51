@@ -6,12 +6,12 @@ CREATE DATABASE db51;
 USE db51;
 
 -- table for both job seekers and employer user information
-CREATE TABLE users
-(
+
 -- Notes:
 -- URLs - refer to links to Google Docs, Dropbox, etc, as we are not storing files on our server
 -- if_company distinguishes the user type/view/access
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	uid int NOT NULL AUTO_INCREMENT,
 =======
@@ -44,6 +44,25 @@ CREATE TABLE users
 
 =======
 	PRIMARY KEY (uid)
+=======
+create table users (
+	uid INT NOT NULL AUTO_INCREMENT,
+	first_name VARCHAR(255),
+	last_name VARCHAR(255),
+	email VARCHAR(255),
+	password VARCHAR(255),
+  if_company BOOLEAN DEFAULT false,
+	comp_name VARCHAR(255),
+	street VARCHAR(255),
+	city VARCHAR(255),
+	state VARCHAR(255),
+	zip VARCHAR(255),
+	resume LONGTEXT,
+	doc1 LONGTEXT,
+	doc2 LONGTEXT,
+	doc3 LONGTEXT,
+  PRIMARY KEY (uid)
+>>>>>>> 8161b79faa1865cd79e9d794afc54854b0566807
 );
 
 >>>>>>> 6b347711dab163b64c0d034110f862ab6b5e4c34
