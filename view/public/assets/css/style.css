@@ -20,7 +20,11 @@ body {
     margin-bottom: -50px;
 }
 
-.footer, .push {
-    height: 50px;
+footer {
+    position: relative;
+    bottom: 0px;
+    top: 600px;
+    left: 625px;
 }
+
 
