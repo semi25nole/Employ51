@@ -6,23 +6,28 @@ CREATE DATABASE db51;
 USE db51;
 
 -- table for both job seekers and employer user information
-CREATE TABLE users
-(
+
 -- Notes:
 -- URLs - refer to links to Google Docs, Dropbox, etc, as we are not storing files on our server
 -- if_company distinguishes the user type/view/access
 
-	uid int NOT NULL AUTO_INCREMENT,
-	fname varchar(255) NOT NULL,
-    lname varchar(255) NOT NULL,
-    email varchar(255) NOT NULL,
-    pass varchar(255) NOT NULL,
-    resume_url VARCHAR(255) DEFAULT NULL, 
-    doc1_url VARCHAR(255) DEFAULT NULL, 
-    doc2_url VARCHAR(255) DEFAULT NULL,
-    doc3_url VARCHAR(255) DEFAULT NULL,
-    if_company BOOLEAN DEFAULT false,
-	PRIMARY KEY (uid)
+create table users (
+	uid INT NOT NULL AUTO_INCREMENT,
+	first_name VARCHAR(255),
+	last_name VARCHAR(255),
+	email VARCHAR(255),
+	password VARCHAR(255),
+  if_company BOOLEAN DEFAULT false,
+	comp_name VARCHAR(255),
+	street VARCHAR(255),
+	city VARCHAR(255),
+	state VARCHAR(255),
+	zip VARCHAR(255),
+	resume LONGTEXT,
+	doc1 LONGTEXT,
+	doc2 LONGTEXT,
+	doc3 LONGTEXT,
+  PRIMARY KEY (uid)
 );
 
 -- table which holds jobs applied for
