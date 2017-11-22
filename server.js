@@ -8,7 +8,7 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 // Requiring our models for syncing
-var db = require("./models");
+var db = require("./model");
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
@@ -19,4 +19,12 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Static directory
 app.use(express.static("public"));
 
-//routes
+// Routes
+// =============================================================
+require("./app/routes/api-routes.js")(app);
+
+// Starts the server to begin listening
+// =============================================================
+app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+});
