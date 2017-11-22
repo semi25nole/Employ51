@@ -1,71 +1,85 @@
-//users table model
+//jobs table model
 
 module.exports = function(sequelize, DataTypes) {
-    return sequelize.define('users', {
-        uid: {
+    return sequelize.define('jobs', {
+        jid: {
             type: DataTypes.INTEGER(11),
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
         },
-        first_name: {
+        job_title: {
+            type: DataTypes.STRING(255),
+            allowNull: false
+        },
+        job_desc: {
+            type: DataTypes.TEXT,
+            allowNull: true
+        },
+        job_posted: {
             type: DataTypes.STRING(255),
             allowNull: true
         },
-        last_name: {
-            type: DataTypes.STRING(255),
-            allowNull: true
-        },
-        email: {
-            type: DataTypes.STRING(255),
-            allowNull: true
-        },
-        password: {
-            type: DataTypes.STRING(255),
-            allowNull: true
-        },
-        if_company: {
-            type: DataTypes.INTEGER(1),
+        if_remote: {
+            type: DataTypes.INTEGER(11),
             allowNull: true,
             defaultValue: '0'
+        },
+        job_type_id: {
+            type: DataTypes.STRING(10),
+            allowNull: true
+        },
+        job_type_name: {
+            type: DataTypes.STRING(255),
+            allowNull: true
+        },
+        if_ft: {
+            type: DataTypes.INTEGER(11),
+            allowNull: true,
+            defaultValue: '1'
         },
         comp_name: {
             type: DataTypes.STRING(255),
             allowNull: true
         },
-        street: {
+        comp_url: {
             type: DataTypes.STRING(255),
             allowNull: true
         },
-        city: {
+        comp_loc: {
             type: DataTypes.STRING(255),
             allowNull: true
         },
-        state: {
+        comp_logo: {
             type: DataTypes.STRING(255),
             allowNull: true
         },
-        zip: {
+        apply_url: {
             type: DataTypes.STRING(255),
             allowNull: true
         },
-        resume: {
+        job_url: {
+            type: DataTypes.STRING(255),
+            allowNull: true
+        },
+        hr_feedback: {
             type: DataTypes.TEXT,
             allowNull: true
         },
-        doc1: {
-            type: DataTypes.TEXT,
-            allowNull: true
+        hr_if_hired: {
+            type: DataTypes.INTEGER(1),
+            allowNull: true,
+            defaultValue: '0'
         },
-        doc2: {
-            type: DataTypes.TEXT,
-            allowNull: true
-        },
-        doc3: {
-            type: DataTypes.TEXT,
-            allowNull: true
+        uid: {
+            type: DataTypes.INTEGER(11),
+            allowNull: true,
+            references: {
+                model: 'users',
+                key: 'uid'
+            }
         }
     }, {
-        tableName: 'users'
+        tableName: 'jobs'
     });
 };

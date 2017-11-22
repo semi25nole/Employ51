@@ -22,7 +22,7 @@ app.use(express.static("public"));
 // Routes
 // =============================================================
 require("control/routing/apiRoutes.js")(app);
-require("control/routing/fileRoutes")(app);
+require("control/routing/fileRoutes.js")(app);
 
 // Starts the server to begin listening
 // =============================================================
