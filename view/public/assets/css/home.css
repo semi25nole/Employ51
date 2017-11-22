@@ -7,11 +7,15 @@ body {
 .display-3 {
     font-family: 'Monoton', cursive;
     color: white;
-    border-width: 6px;
-    border-color: black;
 }
 
-#title {}
+#title {
+    /* text-shadow: 2px 2px black; */
+}
+
+.lead {
+    /* text-shadow: 1px 1px black; */
+}
 
 #navigation {
     position: absolute;
@@ -29,4 +33,5 @@ footer {
     bottom: 0px;
     top: 600px;
     left: 625px;
+    /* text-shadow: 1px 1px black; */
 }
