@@ -9,7 +9,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico|VT323" rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css">    -->
     <link rel="stylesheet" href="assets/css/home.css">
@@ -19,9 +19,9 @@
     <div class="wrapper">
         <div class="container">
             <div class="main">
-                <h1 class="display-3" id="title">Employ51 </h1>
-                <p class="lead" style="text-indent: 300px; color:#92b558; font-family: 'Pacifico', cursive;">Job search simplified</p>
-                <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #92b558" id="navigation">
+                <h1 class="display-3" id="title">Employ51</h1>
+                <p class="lead" id="subheader" style="text-indent: 300px; color:#130000; font-family: 'Pacifico', cursive; padding-top: 60px; padding-right: 60px;">Job search simplified</p>
+                <nav class="navbar navbar-expand-lg navbar-dark" id="navigation">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			    </button>
@@ -36,7 +36,7 @@
 		          Sign/Login
 		        	    </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" id="userLogin" href="#">User login</a>
+                                    <a class="dropdown-item" id="createAccount" href="#">User login</a>
                                     <a class="dropdown-item" id="hrLogin" href="#">HR login</a>
                                 </div>
                             </li>
@@ -49,30 +49,47 @@
                     </div>
                 </nav>
             </div>
-
-            <div id="resultDiv"></div>
-            <div class="modal" id="userModal" tabindex="-1" role="dialog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg">
+                        <div id="resultDiv"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="createModal" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">User login</h5>
-                            <button type="button" class="login" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
+                        <div class="modal-header" style="background-color: lightblue">
+                            <h5 class="modal-title">Create Account</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
                         <div class="modal-body" id="bodyModal">
                             <form>
                                 <div class="form-group">
-                                    <label for="recipient-name" class="col-form-label">Email:</label>
-                                    <input type="text" class="form-control" id="recipient-name">
+                                    <label for="recipient-nameFirst" class="col-form-label">First Name:</label>
+                                    <input type="text" class="form-control" id="recipient-nameFirst">
                                 </div>
                                 <div class="form-group">
-                                    <label for="message-text" class="col-form-label">Password:</label>
-                                    <input type="text" class="form-control" id="recipient-password">
+                                    <label for="recipient-nameLast" class="col-form-label">Last Name:</label>
+                                    <input type="text" class="form-control" id="recipient-nameLast">
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-nameEmail" class="col-form-label">Email:</label>
+                                    <input type="text" class="form-control" id="recipient-nameEmail">
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-namePassword" class="col-form-label">Password:</label>
+                                    <input type="text" class="form-control" id="recipient-namePassword">
                                 </div>
                             </form>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Create</button>
+                            </div>
+                            <div>
+                                <p class="haveaccount" style="text-align: left;">Already have an account?</p>
+                                <button type="button" class="btn btn-primary" id="modalLoginButton" data-dismiss="modal">Login</button>
                             </div>
                         </div>
                     </div>
@@ -98,8 +115,8 @@ color: #92b558;">
     <script src="assets/js/app.js"></script>
 
     <script type="text/javascript">
-        $('#userLogin').on('click', function() {
-            $('#userModal').show();
+        $('#createAccount').on('click', function() {
+            $('#createModal').show();
         });
     </script>
 

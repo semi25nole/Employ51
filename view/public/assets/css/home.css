@@ -1,32 +1,35 @@
-body {
-    background-image: url(../images/meetingcartoon.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.display-3 {
-    font-family: 'Monoton', cursive;
-    color: white;
-    border-width: 6px;
-    border-color: black;
-}
-
-#title {}
-
-#navigation {
-    position: absolute;
-    left: 378px;
-}
-
-.wrapper {
-    text-align: center;
-    min-height: 100%;
-    margin-bottom: -50px;
-}
-
-footer {
-    position: relative;
-    bottom: 0px;
-    top: 600px;
-    left: 625px;
-}
+    body {
+        background-image: url(../images/meetingcartoon.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .display-3 {
+        font-family: 'Coiny', cursive;
+        color: white;
+        border-width: 6px;
+        border-color: black;
+        font-size: xx-large;
+        position: absolute;
+        padding-left: 350px;
+    }
+    
+    #navigation {
+        position: absolute;
+        left: 286px;
+        width: 782px;
+        background-color: #12170b;
+    }
+    
+    .wrapper {
+        text-align: center;
+        min-height: 100%;
+        margin-bottom: -50px;
+    }
+    
+    footer {
+        position: relative;
+        bottom: 0px;
+        top: 600px;
+        left: 625px;
+    }
