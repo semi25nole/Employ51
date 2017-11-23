@@ -1,0 +1,15 @@
+body {
+    background-image: url(../images/employee-lunch-break-min.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.display-3 {
+    font-family: 'Coiny', cursive;
+    color: white;
+    border-width: 6px;
+    border-color: black;
+    font-size: xx-large;
+    position: absolute;
+    padding-left: 350px;
+}
