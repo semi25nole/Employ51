@@ -4,9 +4,13 @@ body {
     background-size: 100%;
 }
 
-.display-3 {
+#title {
     font-family: 'Monoton', cursive;
-    color: #92b558;
+    color: black;
+    border-width: 6px;
+    border-color: black;
+    font-size: xx-large;
+    position: fixed;
 }
 
 #navigation {
@@ -20,7 +24,7 @@ body {
     margin-bottom: -50px;
 }
 
-.footer, .push {
+.footer,
+.push {
     height: 50px;
 }
-
