@@ -4,6 +4,12 @@
         background-size: 100%;
     }
     
+    .wrapper {
+        /* text-align: center; */
+        min-height: 100%;
+        margin-bottom: -50px;
+    }
+    
     .display-3 {
         font-family: 'Coiny', cursive;
         color: white;
@@ -14,6 +20,20 @@
         padding-left: 350px;
     }
     
+    #title {
+        text-shadow: 2px 2px black;
+    }
+    
+    .lead {
+        text-indent: 300px;
+        color: white;
+        font-family: 'Pacifico', cursive;
+        padding-top: 32px;
+        /* padding-right: 79px; */
+        padding-left: 80px;
+        text-shadow: 1px 1px black;
+    }
+    
     #navigation {
         position: absolute;
         left: 286px;
@@ -21,13 +41,21 @@
         background-color: #12170b;
     }
     
-    .wrapper {
-        text-align: center;
-        min-height: 100%;
-        margin-bottom: -50px;
+    #search {
+        color: beige;
+    }
+    
+    .modal-header {
+        background-color: lightblue;
+    }
+    
+    .haveaccount {
+        text-align: left;
     }
     
     footer {
+        font-family: 'Coiny', cursive;
+        color: black;
         position: relative;
         bottom: 0px;
         top: 600px;
