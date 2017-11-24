@@ -17,6 +17,17 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // Static directory
-app.use(express.static("public"));
+app.use(express.static("view/public"));
 
-//routes
+// Routes
+// =============================================================
+// require("./control/routing/apiRoutes.js")(app);
+require("./control/routing/fileRoutes.js")(app);
+
+// Starts the server to begin listening
+// =============================================================
+db.sequelize.sync({ force: true }).then(function() {
+    app.listen(PORT, function() {
+        console.log("App listening on PORT " + PORT);
+    });
+});
