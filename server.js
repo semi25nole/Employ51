@@ -17,12 +17,12 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // Static directory
-app.use(express.static("public"));
+app.use(express.static("view\public"));
 
 // Routes
 // =============================================================
-require("control/routing/apiRoutes.js")(app);
-require("control/routing/fileRoutes.js")(app);
+// require("./control/routing/apiRoutes.js")(app);
+require("./control/routing/fileRoutes.js")(app);
 
 // Starts the server to begin listening
 // =============================================================
