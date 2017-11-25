@@ -21,7 +21,7 @@ app.use(express.static("view/public"));
 
 // Routes
 // =============================================================
-// require("./control/routing/apiRoutes.js")(app);
+require("./control/routing/apiRoutes.js")(app);
 require("./control/routing/fileRoutes.js")(app);
 
 // Starts the server to begin listening
