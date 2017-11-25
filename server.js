@@ -20,14 +20,14 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(express.static("view/public"));
 
 // Routes
-// =============================================================
-require("./control/routing/apiRoutes.js")(app);
-require("./control/routing/fileRoutes.js")(app);
+require("./control/routing/file_routes.js")(app);
+require("./control/routing/user_routes.js")(app);
+require("./control/routing/job_routes.js")(app);
 
 // Starts the server to begin listening
-// =============================================================
+
 db.sequelize.sync({ force: true }).then(function() {
     app.listen(PORT, function() {
-        console.log("App listening on PORT " + PORT);
+        console.log("Employ51 App listening on PORT " + PORT);
     });
 });
