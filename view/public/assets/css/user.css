@@ -4,12 +4,101 @@ body {
     background-size: 100%;
 }
 
-.display-3 {
+.wrapper {
+    /* text-align: center; */
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+#mainNavbar {
+    width: 75%;
+    position: absolute;
+    left: 206px;
+}
+
+#title {
     font-family: 'Coiny', cursive;
     color: white;
     border-width: 6px;
     border-color: black;
     font-size: xx-large;
+    /* text-align: center; */
     position: absolute;
-    padding-left: 350px;
+    left: 10px;
+    top: 10px;
+    text-shadow: 2px 2px black;
+}
+
+#motto {
+    font-family: 'Indie Flower', cursive;
+    color: #ffc107;
+    border-width: 6px;
+    border-color: black;
+    font-size: xx-large;
+    /* text-align: center; */
+    position: absolute;
+    top: 50px;
+    text-shadow: 2px 2px black;
+    /* padding-left: 350px; */
+    /* width: auto; */
+    width: 30%;
+    left: 30px;
+}
+
+#createAccount {
+    /* text-align: left; */
+    position: absolute;
+    left: 1078px;
+    /* text-align: left; */
+}
+
+#logout {
+    position: absolute;
+    left: 1220px;
+}
+
+
+/* #navigation {
+    position: absolute;
+    left: 286px;
+    width: 782px;
+    background-color: #12170b;
+} */
+
+
+/* form {
+    position: absolute;
+    left: 471px;
+    /* text-align: -webkit-match-parent; */
+
+
+/* box-sizing: border-box; */
+
+
+/* top: 61px; */
+
+
+/* } */
+
+#search {
+    color: black;
+    background-color: forestgreen;
+    border-color: forestgreen;
+    position: absolute;
+    top: 43px;
+    right: 8px;
+}
+
+
+/* .haveaccount {
+    text-align: left;
+} */
+
+footer {
+    font-family: 'Coiny', cursive;
+    color: black;
+    position: relative;
+    bottom: 0px;
+    top: 600px;
+    left: 625px;
 }
