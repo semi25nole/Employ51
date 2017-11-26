@@ -14,9 +14,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-
-<<<<<<< HEAD
 app.use(express.static("view/public")); // Static directory
+
 
 //Routes
 require("./control/routing/file_routes.js")(app); //page routes
@@ -31,8 +30,18 @@ db.sequelize.sync({ force: true }).then(function() {
 <<<<<<< HEAD
 });
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+});
+=======
+>>>>>>> c9dc407e9fe927972791120f2982b338cc3c1f6e
 });
 =======
 //routes
 >>>>>>> create-account
 >>>>>>> c8b436d4c900ca00f7d781d96848d80f891db0a2
+<<<<<<< HEAD
+=======
+>>>>>>> 7138cf1fdd3ba51406b177d986c1d2bf2c03e020
+>>>>>>> c9dc407e9fe927972791120f2982b338cc3c1f6e
