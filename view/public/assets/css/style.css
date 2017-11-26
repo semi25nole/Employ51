@@ -1,0 +1,30 @@
+body {
+    background-image: url(../images/Sucess.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#title {
+    font-family: 'Monoton', cursive;
+    color: black;
+    border-width: 6px;
+    border-color: black;
+    font-size: xx-large;
+    position: fixed;
+}
+
+#navigation {
+    position: absolute;
+    left: 378px;
+}
+
+.wrapper {
+    text-align: center;
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.footer,
+.push {
+    height: 50px;
+}
