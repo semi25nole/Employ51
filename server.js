@@ -2,8 +2,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 
-// Sets up the Express App
-// =============================================================
 var app = express();
 var PORT = process.env.PORT || 8080;
 
@@ -16,18 +14,17 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-// Static directory
-app.use(express.static("public"));
 
-// Routes
-// =============================================================
-require("control/routing/apiRoutes.js")(app);
-require("control/routing/fileRoutes.js")(app);
+app.use(express.static("view/public")); // Static directory
 
-// Starts the server to begin listening
-// =============================================================
+//Routes
+require("./control/routing/file_routes.js")(app); //page routes
+require("./control/routing/user_routes.js")(app);
+require("./control/routing/job_routes.js")(app);
+
 db.sequelize.sync({ force: true }).then(function() {
+    // Starts the server to begin listening
     app.listen(PORT, function() {
-        console.log("App listening on PORT " + PORT);
+        console.log("Employ51 App listening on PORT " + PORT);
     });
 });

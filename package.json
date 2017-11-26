@@ -1,7 +1,7 @@
 {
     "name": "emply51",
     "version": "1.0.0",
-    "description": "A one-stop-shop job seekers and companies that allows for direct feedback and status tracking.",
+    "description": "A one-stop-shop for job seekers and companies that allows for direct feedback and status tracking.",
     "main": "server.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
