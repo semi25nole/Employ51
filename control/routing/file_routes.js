@@ -22,14 +22,4 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname, "../../view/public/test.html")); //TODO: remove before going live
     });
 
-
-
-    // app.get("/survey", function(req, res) {
-    //     res.sendFile(path.join(__dirname, ""));
-    // });
-
-    // app.get("/js", function(req, res) {
-    //     res.sendFile(path.join(__dirname, "../server.js"));
-    // });
-
 };
