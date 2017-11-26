@@ -61,3 +61,7 @@ typings/
 .git/
 
 jsconfig.json
+
+
+.vscode/
+.vscode/launch.json
