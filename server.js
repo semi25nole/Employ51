@@ -14,9 +14,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-
-<<<<<<< HEAD
 app.use(express.static("view/public")); // Static directory
+
 
 //Routes
 require("./control/routing/file_routes.js")(app); //page routes
@@ -29,6 +28,3 @@ db.sequelize.sync({ force: true }).then(function() {
         console.log("Employ51 App listening on PORT " + PORT);
     });
 });
-=======
-//routes
->>>>>>> create-account
