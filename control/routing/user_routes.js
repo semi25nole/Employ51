@@ -4,20 +4,23 @@ var db = require("../../models");
 //Routes
 module.exports = function(app) {
 
-    // //Need a get route
-    // app.get('#', function(req, res) {
+    // Find all Users and return them to the user with res.json
+    app.get("/api/users", function(req, res) {
+        db.User.findAll({}).then(function(dbUser) {
+            res.json(dbUser);
+        });
+    });
 
-    // });
-
-    // //Need a post route
-    // app.post('#', function(req, res) {
-
-    // });
-
-    // //Need a delete route
-    // app.delete('#', function(req, res) {
-
-    // });
+    app.get("/api/users/:uid", function(req, res) {
+        // Find one User with the id in req.params.id and return them to the user with res.json
+        db.User.findOne({
+            where: {
+                uid: req.params.uid
+            }
+        }).then(function(dbUser) {
+            res.json(dbUser);
+        });
+    });
 
 
 
