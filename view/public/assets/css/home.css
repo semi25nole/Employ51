@@ -18,7 +18,7 @@ body {
     font-size: xx-large;
     /* text-align: center; */
     position: absolute;
-    /* padding-left: 350px; */
+    left: 10px;
     top: 10px;
     text-shadow: 2px 2px black;
 }
@@ -42,13 +42,13 @@ body {
 #createAccount {
     /* text-align: left; */
     position: absolute;
-    left: 900px;
+    left: 1078px;
     /* text-align: left; */
 }
 
 #login {
     position: absolute;
-    left: 1205px;
+    left: 1220px;
 }
 
 
@@ -61,10 +61,10 @@ body {
 
 form {
     position: absolute;
-    left: 478px;
+    left: 471px;
     /* text-align: -webkit-match-parent; */
     /* box-sizing: border-box; */
-    top: 42px;
+    top: 61px;
 }
 
 #search {

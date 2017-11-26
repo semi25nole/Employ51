@@ -27,4 +27,15 @@ db.sequelize.sync({ force: true }).then(function() {
     app.listen(PORT, function() {
         console.log("Employ51 App listening on PORT " + PORT);
     });
+<<<<<<< HEAD
 });
+=======
+<<<<<<< HEAD
+});
+=======
+});
+=======
+//routes
+>>>>>>> create-account
+>>>>>>> c8b436d4c900ca00f7d781d96848d80f891db0a2
+>>>>>>> 7138cf1fdd3ba51406b177d986c1d2bf2c03e020
