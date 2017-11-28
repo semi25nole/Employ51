@@ -5,7 +5,7 @@
     <title>Employ51</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -21,64 +21,80 @@
     <div class="wrapper">
         <div class="container-1">
             <div class="main">
-                <header>
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="mainNavbar">
-                        <a class="navbar-brand" href="#">Applications</a>
-                        <a class="navbar-brand" href="#">Resumes</a>
-                        <a class="navbar-brand" href="#">Saved jobs</a>
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Job title or Keywords" aria-label="Search">
-                            <input class="form-control mr-sm-2" type="search" placeholder="location" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">
+                            <h1 id="userTitle">Employ51</h1>
+                        </a>
+                        <h4 id="userMotto">Job search simplified</h4>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="applications">Applications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="resumes">Resumes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="savedJobs">Saved jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html" id="logout">Logout</a>
+                    </li>
+                </ul>
+                <ul class="nav" id="navSearch">
+                    <li>
+                        <form>
+                            <input class="form-control mr-sm-2" type="search" placeholder="Job title or Keywords" id="userJob" aria-label="Search">
+                            <input class="form-control mr-sm-2" type="location" placeholder="location" id="userLocation" aria-label="Location">
+                            <button class="btn btn-outline-success my-2 my-sm-0" id="userSearch" type="submit">Search</button>
                         </form>
-                    </nav>
-                </header>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="container-2">
+        <div class="job-container">
             <div class="row">
                 <div class="col-lg">
                     <div id="resultDiv"></div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="push"></div>
-    <div class="clearfix">
-        <footer>
-            &copy; Copyright 2017 Employ51
-        </footer>
-    </div>
+        <div class="push"></div>
+        <div class="clearfix">
+            <footer>
+                &copy; Copyright 2017 Employ51
+            </footer>
+        </div>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js " integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh " crossorigin="anonymous "></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js " integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ " crossorigin="anonymous "></script>
-    <script src="assets/js/app.js "></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js " integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh " crossorigin="anonymous "></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js " integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ " crossorigin="anonymous "></script>
+        <script src="assets/js/app.js "></script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js " integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh " crossorigin="anonymous "></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js " integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ " crossorigin="anonymous "></script>
+        <script src="assets/js/app.js "></script>
 
 
+        <script type="text/javascript ">
+            $('#createAccount').on('click', function() {
+                $('#createModal').show();
+            });
 
-    <script type="text/javascript ">
-        $('#createAccount').on('click', function() {
-            $('#createModal').show();
-        });
 
-        $('#closeModal').on('click', function() {
-            close();
-        });
+            $('#closeModal').on('click', function() {
+                close();
+            });
 
-        function close() {
-            $('#createModal').hide();
-        };
-    </script>
+            function close() {
+                $('#createModal').hide();
+            };
+        </script>
 
 </body>
 
 </html>
-
-<a href="home.html">
-    <h1 class="display-3" id="title">Employ51</h1>
-</a>
-<p class="lead" id="motto">Job search simplified</p>
