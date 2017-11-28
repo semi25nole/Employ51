@@ -25,9 +25,26 @@
                     <nav class="navbar navbar-expand-lg navbar-dark" id="navigation">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
+
+                                <a class="nav-link" href="#">About Us<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Sign/Login
+		        	    </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" id="createAccount" href="#">User login</a>
+                                    <a class="dropdown-item" id="hrLogin" href="#">HR login</a>
+                                </div>
+                                <a class="nav-link" id="createAccount" href="#">Create an account<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" id="login" href="#">Login<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" id="createAccount" href="create.html">Create an account<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" id="login" href="login.html">Login<span class="sr-only">(current)</span></a>
+
                                 <a class="nav-link" href="create.html" id="createAccount">Create Account<span class="sr-only">(current)</span></a>
                                 <a class="nav-link" href="login.html" id="login">Login<span class="sr-only ">(current)</span></a>
                                 </a>
+
                             </li>
                         </ul>
                         <form class="form-inline my-2 my-lg-0">
@@ -80,6 +97,13 @@
             $('#closeModal').on('click', function() {
                 close();
             });
+
+
+
+            $('#closeModal').on('click', function() {
+                close();
+            });
+
 
             function close() {
                 $('#createModal').hide();
