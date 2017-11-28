@@ -10,76 +10,81 @@ body {
     margin-bottom: -50px;
 }
 
+.nav {
+    background-color: black;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    height: 82px;
+}
+
+#navSearch {
+    background-color: #795548;
+}
+
 #title {
     font-family: 'Coiny', cursive;
     color: white;
-    border-width: 6px;
-    border-color: black;
+    /*border-width: 6px;
+    border-color: black;*/
     font-size: xx-large;
     /* text-align: center; */
-    position: absolute;
+    /*position: absolute;
     left: 10px;
-    top: 10px;
+    top: 10px;*/
     text-shadow: 2px 2px black;
 }
 
 #motto {
     font-family: 'Indie Flower', cursive;
     color: #ffc107;
-    border-width: 6px;
-    border-color: black;
-    font-size: xx-large;
+    /* font-size: xx-large; */
     /* text-align: center; */
-    position: absolute;
-    top: 50px;
     text-shadow: 2px 2px black;
     /* padding-left: 350px; */
     /* width: auto; */
-    width: 30%;
-    left: 30px;
+    position: absolute;
+    top: 42px;
+    left: 31px;
+}
+
+#login {
+    position: absolute;
+    left: 1142px;
 }
 
 #createAccount {
     /* text-align: left; */
     position: absolute;
-    left: 1078px;
+    left: 990px;
     /* text-align: left; */
 }
 
-#login {
-    position: absolute;
-    left: 1220px;
+#job {
+    position: relative;
+    left: 204px;
+    top: 16px;
 }
 
-
-/* #navigation {
-    position: absolute;
-    left: 286px;
-    width: 782px;
-    background-color: #12170b;
-} */
-
-form {
-    position: absolute;
-    left: 471px;
-    /* text-align: -webkit-match-parent; */
-    /* box-sizing: border-box; */
-    top: 61px;
+#location {
+    position: relative;
+    left: 422px;
+    top: -22px;
 }
 
 #search {
-    color: black;
-    background-color: forestgreen;
+    color: #ffc107;
+    /* background-color: forestgreen; */
     border-color: forestgreen;
-    position: absolute;
-    top: 43px;
-    right: 8px;
+    position: relative;
+    top: -59px;
+    /* right: 8px; */
+    left: 640px;
 }
-
-
-/* .haveaccount {
-    text-align: left;
-} */
 
 footer {
     font-family: 'Coiny', cursive;
