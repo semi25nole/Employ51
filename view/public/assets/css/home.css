@@ -96,6 +96,21 @@ body {
     position: relative;
     top: 20px;
     left: 430px;
+<<<<<<< HEAD
+=======
+}
+
+#userJob {
+    position: relative;
+    top: 20px;
+    left: 430px;
+}
+
+#userJob {
+    position: relative;
+    top: 20px;
+    left: 430px;
+>>>>>>> 117ad5576a952865ade891f44fa6e36267253bfb
 }
 
 #location {
@@ -104,6 +119,17 @@ body {
     top: -22px;
 }
 
+<<<<<<< HEAD
+=======
+#search {
+    position: relative;
+    color: #ffc107;
+    border-color: forestgreen;
+    top: -59px;
+    left: 621px;
+}
+
+>>>>>>> 117ad5576a952865ade891f44fa6e36267253bfb
 #userLocation {
     position: relative;
     left: 652px;
