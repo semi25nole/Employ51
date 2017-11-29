@@ -72,7 +72,7 @@ module.exports = function(app) {
         //IN:
         //{id: 2}
 
-        //OUT: Entire results of left join for both tables. Middleware should pick and choose relevant data to display.
+        //OUT: Array of entire results of left join for both tables. Middleware should pick and choose relevant data to display.
 
 
         //search for ID in db:
@@ -82,7 +82,8 @@ module.exports = function(app) {
                 },
                 include: [db.Job]
             })
-            .then(r => {
+            .then(function(r) {
+                // console.log(r);
                 res.json(r);
             });
 
