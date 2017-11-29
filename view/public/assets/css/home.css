@@ -52,9 +52,21 @@ body {
     left: 31px;
 }
 
-#login {
+#applications {
+    /* text-align: left; */
     position: absolute;
-    left: 1142px;
+    left: 455px;
+    /* text-align: left; */
+}
+
+#resumes {
+    position: absolute;
+    left: 595px;
+}
+
+#savedJobs {
+    position: absolute;
+    left: 705px;
 }
 
 #createAccount {
@@ -64,17 +76,77 @@ body {
     /* text-align: left; */
 }
 
+#login {
+    position: absolute;
+    left: 1142px;
+}
+
+#logout {
+    position: absolute;
+    left: 1142px;
+}
+
 #job {
     position: relative;
     left: 204px;
-    top: 16px;
+    top: 15px;
+}
+
+#userJob {
+    position: relative;
+    top: 20px;
+    left: 430px;
+}
+
+#userJob {
+    position: relative;
+    top: 20px;
+    left: 430px;
+}
+
+#userJob {
+    position: relative;
+    top: 20px;
+    left: 430px;
 }
 
 #location {
     position: relative;
-    left: 422px;
+    left: 415px;
     top: -22px;
 }
+
+#search {
+    position: relative;
+    color: #ffc107;
+    border-color: forestgreen;
+    top: -59px;
+    left: 621px;
+}
+
+#userLocation {
+    position: relative;
+    left: 652px;
+    top: -18px;
+}
+
+
+/* #navigation {
+    position: absolute;
+    left: 286px;
+    width: 782px;
+    background-color: #12170b;
+} */
+
+
+/*form {
+    position: absolute;
+    left: 471px;
+     text-align: -webkit-match-parent; 
+    /* box-sizing: border-box; */
+
+
+/**/
 
 #search {
     color: #ffc107;
@@ -83,8 +155,30 @@ body {
     position: relative;
     top: -59px;
     /* right: 8px; */
-    left: 640px;
+<<<<<<< HEAD
+    <<<<<<< HEAD left: 636px;
+    =======left: 621px;
+    >>>>>>>b460247879a05c3c7fabd05232ce31fe44639356
+=======
+<<<<<<< HEAD
+    left: 636px;
+=======
+    left: 621px;
+>>>>>>> b460247879a05c3c7fabd05232ce31fe44639356
+>>>>>>> 7a23ec96e6b6d87b895bce97195a6029f3c0e30c
 }
+
+#userSearch {
+    position: relative;
+    left: 870px;
+    top: -54px;
+    color: #ffc107;
+}
+
+
+/* .haveaccount {
+    text-align: left;
+} */
 
 footer {
     font-family: 'Coiny', cursive;
