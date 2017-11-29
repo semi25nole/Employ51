@@ -18,8 +18,12 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname, "../../view/public/user.html"));
     });
 
-    app.get("/test", function(req, res) {
-        res.sendFile(path.join(__dirname, "../../view/public/test.html")); //TODO: remove before going live
+    app.get("/testjames", function(req, res) {
+        res.sendFile(path.join(__dirname, "../../view/public/test_james.html")); //TODO: remove before going live
+    });
+
+    app.get("/testkyle", function(req, res) {
+        res.sendFile(path.join(__dirname, "../../view/public/test_kyle.html")); //TODO: remove before going live
     });
 
 };
