@@ -88,25 +88,8 @@ body {
 
 #job {
     position: relative;
-<<<<<<< HEAD
-    left: 197px;
-    top: 16px;
-=======
     left: 204px;
     top: 15px;
-}
-
-#userJob {
-    position: relative;
-    top: 20px;
-    left: 430px;
->>>>>>> b460247879a05c3c7fabd05232ce31fe44639356
-}
-
-#userJob {
-    position: relative;
-    top: 20px;
-    left: 430px;
 }
 
 #userJob {
@@ -119,14 +102,6 @@ body {
     position: relative;
     left: 415px;
     top: -22px;
-}
-
-#search {
-    position: relative;
-    color: #ffc107;
-    border-color: forestgreen;
-    top: -59px;
-    left: 640px;
 }
 
 #userLocation {
@@ -160,17 +135,7 @@ body {
     position: relative;
     top: -59px;
     /* right: 8px; */
-<<<<<<< HEAD
-    <<<<<<< HEAD left: 636px;
-    =======left: 621px;
-    >>>>>>>b460247879a05c3c7fabd05232ce31fe44639356
-=======
-<<<<<<< HEAD
-    left: 636px;
-=======
     left: 621px;
->>>>>>> b460247879a05c3c7fabd05232ce31fe44639356
->>>>>>> 7a23ec96e6b6d87b895bce97195a6029f3c0e30c
 }
 
 #userSearch {
