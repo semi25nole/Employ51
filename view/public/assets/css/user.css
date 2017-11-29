@@ -83,6 +83,10 @@ body {
     width: max-content;
 }
 
+#dropdownOptions {
+    background-color: yellowgreen;
+}
+
 #userJob {
     position: relative;
     top: 20px;
