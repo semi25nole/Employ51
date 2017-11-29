@@ -1,7 +1,10 @@
 body {
     background-image: url(../images/meetingcartoon.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .wrapper {
@@ -90,6 +93,7 @@ footer {
     font-family: 'Coiny', cursive;
     color: black;
     position: relative;
+    width: 50%;
     bottom: 0px;
     top: 600px;
     left: 625px;
