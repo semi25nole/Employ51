@@ -34,12 +34,9 @@ $(document).ready(function() {
             console.log(data);
             var myJSON = JSON.stringify(data);
             $('#r').text(myJSON);
-
-
         }, "json");
 
     }
-
 
     function apiDisplay() {
         event.preventDefault(); //crucial to see correct results!
@@ -50,10 +47,7 @@ $(document).ready(function() {
             console.log(data);
             var myJSON = JSON.stringify(data);
             $('#r').text(myJSON);
-
         }, "json");
-
-
     }
 
 
