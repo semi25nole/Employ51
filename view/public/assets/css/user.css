@@ -1,5 +1,5 @@
 body {
-    background-image: url(../images/meetingcartoon.svg);
+    background-image: url(../images/employee-lunch-break-min.svg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -24,6 +24,7 @@ body {
 
 #navSearch {
     background-color: #795548;
+    height: 67px;
 }
 
 #userTitle {
