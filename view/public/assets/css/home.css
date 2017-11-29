@@ -86,6 +86,16 @@ body {
     left: 630px;
 }
 
+.card {
+    position: relative;
+    left: 270px;
+    width: 60%;
+}
+
+.card-header {
+    background-color: lightgray;
+}
+
 footer {
     font-family: 'Coiny', cursive;
     color: black;

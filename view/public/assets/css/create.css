@@ -98,6 +98,10 @@ form {
     top: 83px;
 }
 
+#noAccount {
+    padding: 13px;
+}
+
 footer {
     font-family: 'Coiny', cursive;
     color: black;
