@@ -49,13 +49,13 @@ module.exports = function(app) {
                     password = user.password;
                     fname = user.first_name;
                     lname = user.last_name;
-                    id = user.uid;
+                    id = user.id;
 
                     if (password === req.body.pass) {
                         resultObject = {
                             fname: user.first_name,
                             lname: user.last_name,
-                            id: user.uid
+                            id: user.id
                         };
                     }
                     res.json(resultObject); //return object - user match
@@ -72,57 +72,127 @@ module.exports = function(app) {
         //IN:
         //{id: 2}
 
-        //OUT: Entire results of left join for both tables. Middleware should pick and choose relevant data to display.
-
+        //OUT: Array of entire results of left join for both tables. Middleware should pick and choose relevant data to display.
 
         //search for ID in db:
         db.User.findAll({
                 where: {
-                    uid: req.body.id //must exist
+                    id: req.body.id //must exist
                 },
                 include: [db.Job]
             })
-            .then(r => {
+            .then(function(r) {
+                // console.log(r);
                 res.json(r);
             });
 
 
     });
 
-    //MAINTENENCE
 
+    //create user
+    // POST route for saving a new post
 
+    //IN:
+    //example object:
+    /*
+    uObj = { //required fields have *'s  below - all fields are strings
+             first_name: 'John', //*
+             last_name: 'Public', //*
+             email: 'jq@public.com', //*
+             password: '8675309', //*
+             if_company: '0', //*
+             comp_name: '',
+             city: '',
+             state: '',
+             zip: '',
+             resume: '',
+             doc1: '',
+             doc2: '',
+             doc3: ''
+         };
+    */
 
+    //OUT:
+    // Creates user in db and returns matching object:
+    /*
+    {"id":21,"first_name":"John","last_name":"Public","email":"jq@public.com","password":"8675309","if_company":"0","comp_name":"","city":"","state":"","zip":"","resume":"","doc1":"","doc2":"","doc3":"","updatedAt":"2017-11-30T00:01:17.997Z","createdAt":"2017-11-30T00:01:17.997Z"}
+    */
 
-    // Find all Users and return them to the user with res.json
-    app.get("/api/users", function(req, res) {
-        db.User.findAll({}).then(function(dbUser) {
-            res.json(dbUser);
+    app.post("/api/user/create", function(req, res) {
+        db.User.create(req.body).then(function(data) {
+            res.json(data);
         });
     });
 
-    app.get("/api/users/:uid", function(req, res) {
-        // Find one User with the id in req.params.id and return them to the user with res.json
+    //read user info
+    //IN: number
+
+    //OUT:
+    /*
+    object will all the user info from the user table (look at /models/users.js for specific data 
+    OR the test file example return object (too big to put here).
+    )
+    */
+
+    app.get("/api/user/:id", function(req, res) {
         db.User.findOne({
             where: {
-                uid: req.params.uid
+                id: req.params.id
             }
-        }).then(function(dbUser) {
-            res.json(dbUser);
+        }).then(function(data) {
+            res.json(data);
         });
     });
 
-    //use post to request information (with qualifiers)
-    app.post("/api/users", function(req, res) {
-        db.Post.create(req.body).then(function(dbPost) {
-            res.json(dbPost);
+
+    //update user info
+    // PUT route for updating posts
+
+    //IN below object (has ID field required)
+
+    //OUT: returns how many records updated
+    app.put("/api/user/update", function(req, res) {
+        db.User.update(
+            req.body, {
+                where: {
+                    id: req.body.id
+                }
+            }).then(function(data) {
+            res.json(data);
         });
     });
 
-    //UPDATE 
+    //delete user
+    //IN: user id in form of a number
+    //OUT: returns how many entries on jobs table deleted - assume 1 user on users table
+
+    app.delete("/api/user/:id", function(req, res) {
+        // Delete the user with the id available to us in req.params.id
+        db.Job.destroy({
+
+            where: {
+                UserId: req.params.id //must exist
+            }
+        })
+
+        .then(function(data) {
+            db.User.destroy({
+
+                where: {
+                    id: req.params.id //must exist
+                }
+            })
+            res.json(data);
+        });
+    });
 
 
-    //DELETE 
+
+
+
+
+
 
 
 

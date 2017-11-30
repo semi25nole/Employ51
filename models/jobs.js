@@ -2,15 +2,15 @@
 
 module.exports = function(sequelize, DataTypes) {
     var Job = sequelize.define('Job', {
-        jid: {
-            type: DataTypes.INTEGER(11),
-            allowNull: false,
-            primaryKey: true,
-            autoIncrement: true
-        },
+        // jid: {
+        //     type: DataTypes.INTEGER(11),
+        //     allowNull: false,
+        //     primaryKey: true,
+        //     autoIncrement: true
+        // },
         job_title: {
             type: DataTypes.STRING(255),
-            allowNull: false
+            allowNull: true
         },
         job_desc: {
             type: DataTypes.TEXT,
