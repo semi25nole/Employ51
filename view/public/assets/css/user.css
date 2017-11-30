@@ -114,6 +114,13 @@ body {
     position: absolute;
 }
 
+img {
+    vertical-align: middle;
+    border-style: none;
+    position: relative;
+    left: 110px;
+}
+
 #sadPhoto {
     height: 300px;
 }
