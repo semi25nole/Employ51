@@ -86,11 +86,12 @@ body {
     left: 630px;
 }
 
-.card {
+
+/* .card {
     position: relative;
     left: 270px;
     width: 60%;
-}
+} */
 
 .card-header {
     background-color: lightgray;
