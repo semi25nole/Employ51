@@ -1,7 +1,9 @@
+// require('jquery');
+
 $(document).ready(function() {
 
     //change function here to test different things
-    //$(document).on("submit", apiAuth); //authenication
+    // $(document).on("submit", apiAuth); //authenication
     $(document).on("submit", apiDisplay); //change function here to test different things
 
     var dataObj = {
@@ -23,24 +25,44 @@ $(document).ready(function() {
             .then(doSomething);
     }
 
-    function apiAuth(params) {
-
-        console.log('out:');
+    function apiAuth() {
+        event.preventDefault(); //crucial to see correct results!
+        console.log('sent:');
         console.log(authVar);
         $.post("/api/auth", authVar, function(data) {
-            console.log('in:');
-            console.log(data); // 
+            console.log('received back:');
+            console.log(data);
+            var myJSON = JSON.stringify(data);
+            $('#r').text(myJSON);
+
 
         }, "json");
 
     }
 
-    function apiDisplay(params) {
+
+    function apiDisplay() {
+        event.preventDefault(); //crucial to see correct results!
+        console.log('sent:');
+        console.log(displayVar);
         $.post("/api/display", displayVar, function(data) {
-            console.log('in:');
-            console.log(data); // 
-            alert(data);
+            console.log('received back:');
+            console.log(data);
+            var myJSON = JSON.stringify(data);
+            $('#r').text(myJSON);
 
         }, "json");
+
+
     }
+
+
+
+
+
+
+
+
+
+
 });
