@@ -106,6 +106,24 @@ body {
     color: #ffc107;
 }
 
+.modal-header {
+    background-color: sienna;
+}
+
+#deleteModal {
+    position: absolute;
+}
+
+#sadPhoto {
+    height: 300px;
+}
+
+#areYouSure {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 900;
+    font-size: x-large;
+}
+
 footer {
     font-family: 'Coiny', cursive;
     color: black;
