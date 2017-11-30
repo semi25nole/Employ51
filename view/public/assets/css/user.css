@@ -123,6 +123,7 @@ img {
 
 #sadPhoto {
     height: 300px;
+    border: inherit;
 }
 
 #areYouSure {
