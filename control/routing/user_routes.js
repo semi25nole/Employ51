@@ -72,8 +72,7 @@ module.exports = function(app) {
         //IN:
         //{id: 2}
 
-        //OUT: Entire results of left join for both tables. Middleware should pick and choose relevant data to display.
-
+        //OUT: Array of entire results of left join for both tables. Middleware should pick and choose relevant data to display.
 
         //search for ID in db:
         db.User.findAll({
@@ -82,17 +81,96 @@ module.exports = function(app) {
                 },
                 include: [db.Job]
             })
-            .then(r => {
+            .then(function(r) {
+                // console.log(r);
                 res.json(r);
             });
 
 
     });
 
-    //MAINTENENCE
+    //MAINTENENCE:
+    //create user
+    // POST route for saving a new post
+
+    //IN:
+    //example object:
+    /*
+    uObj = { //required fields have *'s  below - all fields are strings
+             first_name: 'John', //*
+             last_name: 'Public', //*
+             email: 'jq@public.com', //*
+             password: '8675309', //*
+             if_company: '0', //*
+             comp_name: '',
+             city: '',
+             state: '',
+             zip: '',
+             resume: '',
+             doc1: '',
+             doc2: '',
+             doc3: ''
+         };
+    */
+
+    //OUT:
+    // Creates user in db and returns matching object:
+    /*
+    {"uid":21,"first_name":"John","last_name":"Public","email":"jq@public.com","password":"8675309","if_company":"0","comp_name":"","city":"","state":"","zip":"","resume":"","doc1":"","doc2":"","doc3":"","updatedAt":"2017-11-30T00:01:17.997Z","createdAt":"2017-11-30T00:01:17.997Z"}
+    */
+
+    app.post("/api/maint/create", function(req, res) {
+        db.User.create(req.body).then(function(data) {
+            res.json(data);
+        });
+    });
+
+    //read user info
+    //IN: number
+
+    //OUT:
+    /*
+    object will all the user info from the user table (look at /models/users.js for specific data 
+    OR the test file example return object (too big to put here).
+    )
+    */
+
+    app.get("/api/maint/:id", function(req, res) {
+        db.User.findOne({
+            where: {
+                uid: req.params.id
+            }
+        }).then(function(data) {
+            res.json(data);
+        });
+    });
+
+
+    //update user info
+    // PUT route for updating posts
+
+    //IN below object (has ID field required)
+
+    //OUT: returns how many records updated
+    app.put("/api/maint/update", function(req, res) {
+        db.User.update(
+            req.body, {
+                where: {
+                    uid: req.body.id
+                }
+            }).then(function(data) {
+            res.json(data);
+        });
+    });
 
 
 
+
+
+    //delete user
+
+
+    //** anything below this line - disregard **
 
     // Find all Users and return them to the user with res.json
     app.get("/api/users", function(req, res) {
