@@ -5,21 +5,19 @@
      //change function here to test different things
      // $(document).on("submit", apiAuth); //authenication
      //$(document).on("submit", apiDisplay); //change function here to test different things
-     $(document).on("submit", apiUser_Create); //change function here to test different things
+     //$(document).on("submit", apiUser_Create); //change function here to test different things
+     $(document).on("submit", apiUser_Read); //change function here to test different things
+
+
 
      var dataObj = {
          id: '20',
          name: 'john Smith'
      };
 
-     var authVar = {
-         email: 'bigonet1@mit.edu',
-         pass: 'Q3OiMPsw5f'
-     };
 
-     var displayVar = {
-         id: '2'
-     };
+
+
 
      function apiU(params) {
          $.post("/api/users", dataObj)
@@ -27,6 +25,11 @@
      }
 
      function apiAuth() {
+         var authVar = {
+             email: 'bigonet1@mit.edu',
+             pass: 'Q3OiMPsw5f'
+         };
+
          event.preventDefault(); //crucial to see correct results!
          console.log('sent:');
          console.log(authVar);
@@ -40,6 +43,9 @@
      }
 
      function apiDisplay() {
+         var displayVar = {
+             id: '2'
+         };
          event.preventDefault(); //crucial to see correct results!
          console.log('sent:');
          console.log(displayVar);
@@ -96,6 +102,31 @@
              $('#r').text(myJSON);
          }, "json");
      }
+
+     function apiUser_Read() {
+         event.preventDefault(); //crucial to see correct results!
+         // var listItemData = $(this).parent("td").parent("tr").data("author");
+         // var id = listItemData.id;
+
+         //can use above or an object/var(?):
+         var id = 2;
+         console.log('sent:');
+         console.log(id);
+         $.ajax({
+                 method: "GET",
+                 url: "/api/maint/" + id,
+                 dataType: "json"
+             })
+             .done(function(data) {
+                 console.log('received back:');
+                 console.log(data);
+                 var myJSON = JSON.stringify(data);
+                 $('#r').text(myJSON);
+             });
+     }
+
+
+
 
 
 

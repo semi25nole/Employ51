@@ -74,7 +74,6 @@ module.exports = function(app) {
 
         //OUT: Array of entire results of left join for both tables. Middleware should pick and choose relevant data to display.
 
-
         //search for ID in db:
         db.User.findAll({
                 where: {
@@ -126,11 +125,26 @@ module.exports = function(app) {
         });
     });
 
-
-
-
-
     //read user info
+    //IN: number
+
+    //OUT:
+    /*
+    {"uid":2,"first_name":"Bucky","last_name":"Igonet","email":"bigonet1@mit.edu","password":"Q3OiMPsw5f","if_company":1,"comp_name":"Wikivu","street":"8 Porter Crossing","city":"Glendale","state":"AZ","zip":"85305","resume":"http://desdev.cn/platea/dictumst/etiam/faucibus/cursus/urna.jpg?eu=pharetra&orci=magna&mauris=vestibulum&lacinia=aliquet&sapien=ultrices&quis=erat&libero=tortor&nullam=sollicitudin&sit=mi&amet=sit&turpis=amet&elementum=lobortis&ligula=sapien&vehicula=sapien&consequat=non&morbi=mi&a=integer&ipsum=ac&integer=neque&a=duis&nibh=bibendum&in=morbi&quis=non&justo=quam&maecenas=nec&rhoncus=dui&aliquam=luctus&lacus=rutrum&morbi=nulla&quis=tellus&tortor=in&id=sagittis&nulla=dui&ultrices=vel&aliquet=nisl&maecenas=duis","doc1":"https://goo.ne.jp/lectus/in/quam.xml?vulputate=tincidunt&justo=eget&in=tempus&blandit=vel&ultrices=pede&enim=morbi&lorem=porttitor&ipsum=lorem&dolor=id&sit=ligula&amet=suspendisse&consectetuer=ornare&adipiscing=consequat&elit=lectus&proin=in&interdum=est&mauris=risus&non=auctor&ligula=sed&pellentesque=tristique&ultrices=in&phasellus=tempus&id=sit&sapien=amet&in=sem&sapien=fusce&iaculis=consequat&congue=nulla&vivamus=nisl&metus=nunc&arcu=nisl&adipiscing=duis&molestie=bibendum&hendrerit=felis&at=sed&vulputate=interdum&vitae=venenatis&nisl=turpis&aenean=enim","doc2":"https://thetimes.co.uk/dolor/sit.json?sed=rutrum&lacus=neque&morbi=aenean&sem=auctor&mauris=gravida&laoreet=sem&ut=praesent&rhoncus=id&aliquet=massa&pulvinar=id&sed=nisl","doc3":"https://alibaba.com/purus/sit/amet.xml?adipiscing=viverra&molestie=diam&hendrerit=vitae&at=quam&vulputate=suspendisse&vitae=potenti&nisl=nullam&aenean=porttitor&lectus=lacus&pellentesque=at&eget=turpis&nunc=donec&donec=posuere&quis=metus&orci=vitae&eget=ipsum&orci=aliquam&vehicula=non&condimentum=mauris&curabitur=morbi&in=non&libero=lectus&ut=aliquam&massa=sit&volutpat=amet&convallis=diam&morbi=in&odio=magna&odio=bibendum&elementum=imperdiet&eu=nullam&interdum=orci&eu=pede&tincidunt=venenatis&in=non&leo=sodales&maecenas=sed&pulvinar=tincidunt&lobortis=eu&est=felis&phasellus=fusce&sit=posuere&amet=felis&erat=sed&nulla=lacus&tempus=morbi&vivamus=sem&in=mauris&felis=laoreet&eu=ut&sapien=rhoncus&cursus=aliquet&vestibulum=pulvinar&proin=sed&eu=nisl&mi=nunc&nulla=rhoncus&ac=dui&enim=vel&in=sem&tempor=sed&turpis=sagittis&nec=nam&euismod=congue&scelerisque=risus&quam=semper&turpis=porta&adipiscing=volutpat&lorem=quam&vitae=pede&mattis=lobortis&nibh=ligula&ligula=sit&nec=amet&sem=eleifend&duis=pede&aliquam=libero&convallis=quis&nunc=orci&proin=nullam&at=molestie&turpis=nibh&a=in&pede=lectus&posuere=pellentesque&nonummy=at","createdAt":"2016-10-08T07:40:34.000Z","updatedAt":"2017-08-04T15:40:13.000Z"}
+    */
+
+    app.get("/api/maint/:id", function(req, res) {
+        db.User.findOne({
+            where: {
+                uid: req.params.id
+            }
+        }).then(function(data) {
+            res.json(data);
+        });
+    });
+
+
+
     //update user info
     //delete user
 
