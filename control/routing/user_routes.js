@@ -90,10 +90,52 @@ module.exports = function(app) {
 
     });
 
-    //MAINTENENCE
+    //MAINTENENCE:
+    //create user
+    // POST route for saving a new post
+
+    //IN:
+    //example object:
+    /*
+    uObj = { //required fields have *'s  below - all fields are strings
+             first_name: 'John', //*
+             last_name: 'Public', //*
+             email: 'jq@public.com', //*
+             password: '8675309', //*
+             if_company: '0', //*
+             comp_name: '',
+             city: '',
+             state: '',
+             zip: '',
+             resume: '',
+             doc1: '',
+             doc2: '',
+             doc3: ''
+         };
+    */
+
+    //OUT:
+    // Creates user in db and returns matching object:
+    /*
+    {"uid":21,"first_name":"John","last_name":"Public","email":"jq@public.com","password":"8675309","if_company":"0","comp_name":"","city":"","state":"","zip":"","resume":"","doc1":"","doc2":"","doc3":"","updatedAt":"2017-11-30T00:01:17.997Z","createdAt":"2017-11-30T00:01:17.997Z"}
+    */
+
+    app.post("/api/maint/create", function(req, res) {
+        db.User.create(req.body).then(function(data) {
+            res.json(data);
+        });
+    });
 
 
 
+
+
+    //read user info
+    //update user info
+    //delete user
+
+
+    //** anything below this line - disregard **
 
     // Find all Users and return them to the user with res.json
     app.get("/api/users", function(req, res) {
