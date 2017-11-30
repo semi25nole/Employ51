@@ -89,7 +89,7 @@ module.exports = function(app) {
 
     });
 
-    //userENENCE:
+
     //create user
     // POST route for saving a new post
 

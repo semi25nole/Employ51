@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
         // },
         job_title: {
             type: DataTypes.STRING(255),
-            allowNull: false
+            allowNull: true
         },
         job_desc: {
             type: DataTypes.TEXT,
