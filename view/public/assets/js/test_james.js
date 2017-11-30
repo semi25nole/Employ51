@@ -7,8 +7,8 @@
      //$(document).on("submit", apiDisplay); //change function here to test different things
      //$(document).on("submit", apiUser_Create); //change function here to test different things
      //  $(document).on("submit", apiUser_Read); //change function here to test different things
-     $(document).on("submit", apiUser_Update); //change function here to test different things
-
+     //$(document).on("submit", apiUser_Update); //change function here to test different things
+     $(document).on("submit", apiUser_Delete); //change function here to test different things
 
 
      //tests auth
@@ -118,6 +118,8 @@
 
      //update user/hr info (ID IS REQUIRED!)
      function apiUser_Update() {
+
+
          event.preventDefault(); //crucial to see correct results!
          var uObj = { //required fields have *'s  below - all fields are strings
              id: null, //*
@@ -169,7 +171,28 @@
              });
      }
 
+     //tests individual user/hr info from user table
+     function apiUser_Delete() {
+         event.preventDefault(); //crucial to see correct results!
+         // var listItemData = $(this).parent("td").parent("tr").data("author");
+         // var id = listItemData.id;
 
+         //can use above or an object/var(?):
+         var id = 2;
+         console.log('sent:');
+         console.log(id);
+         $.ajax({
+                 method: "DELETE",
+                 url: "/api/maint/" + id,
+                 dataType: "json"
+             })
+             .done(function(data) {
+                 console.log('received back:');
+                 console.log(data);
+                 var myJSON = JSON.stringify(data);
+                 $('#r').text(myJSON);
+             });
+     }
 
 
 
