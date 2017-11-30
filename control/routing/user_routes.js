@@ -4,16 +4,16 @@ var db = require("../../models");
 //Routes
 module.exports = function(app) {
 
-    //CREATE 
+    //AUTHENTICATION: 
 
     //authentication (new and existing users)
     //use post to request information (with qualifiers)
     app.post("/api/auth", function(req, res) {
+        //INPUT:
+        // object - example: {email: "bigonet1@mit.edu", pass: "Q3OiMPsw5f"}
 
-        //in: object:
-        // example: {email: "bigonet1@mit.edu", pass: "Q3OiMPsw5f"}
-
-        // if match (valid), returns object:
+        //OUTPUT:
+        // If match (valid), returns object:
         // example: {fname: "Bucky", lname: "Igonet", id: 2}
         // Use: having the id available allows middleware to store id locally and use in a request, which will determine what the user sees (hr will see company info and job seeker will see searches in other routes)
 
@@ -52,23 +52,48 @@ module.exports = function(app) {
                     id = user.uid;
 
                     if (password === req.body.pass) {
-
                         resultObject = {
                             fname: user.first_name,
                             lname: user.last_name,
                             id: user.uid
                         };
                     }
-
-                    res.json(resultObject);
+                    res.json(resultObject); //return object - user match
                 } catch (error) {
-                    res.json(resultObject);
+                    res.json(resultObject); //return object - user not matched
                 }
 
             });
     });
 
-    //READ 
+    //DISPLAY:
+    //use post to request information (with qualifiers)
+    app.post("/api/display", function(req, res) {
+        //IN:
+        //{id: 2}
+
+        //OUT: Entire results of left join for both tables. Middleware should pick and choose relevant data to display.
+
+
+        //search for ID in db:
+        db.User.findAll({
+                where: {
+                    uid: req.body.id //must exist
+                },
+                include: [db.Job]
+            })
+            .then(r => {
+                res.json(r);
+            });
+
+
+    });
+
+    //MAINTENENCE
+
+
+
+
     // Find all Users and return them to the user with res.json
     app.get("/api/users", function(req, res) {
         db.User.findAll({}).then(function(dbUser) {
