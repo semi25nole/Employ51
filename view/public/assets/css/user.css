@@ -77,9 +77,14 @@ body {
     /* text-align: left; */
 }
 
-#logout {
+#myAccount {
     position: absolute;
-    left: 1142px;
+    left: 975px;
+    width: max-content;
+}
+
+#dropdownOptions {
+    background-color: yellowgreen;
 }
 
 #userJob {
@@ -105,6 +110,7 @@ footer {
     font-family: 'Coiny', cursive;
     color: black;
     position: relative;
+    width: 50%;
     bottom: 0px;
     top: 600px;
     left: 625px;
