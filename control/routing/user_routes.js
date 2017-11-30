@@ -89,7 +89,7 @@ module.exports = function(app) {
 
     });
 
-    //MAINTENENCE:
+    //userENENCE:
     //create user
     // POST route for saving a new post
 
@@ -119,7 +119,7 @@ module.exports = function(app) {
     {"id":21,"first_name":"John","last_name":"Public","email":"jq@public.com","password":"8675309","if_company":"0","comp_name":"","city":"","state":"","zip":"","resume":"","doc1":"","doc2":"","doc3":"","updatedAt":"2017-11-30T00:01:17.997Z","createdAt":"2017-11-30T00:01:17.997Z"}
     */
 
-    app.post("/api/maint/create", function(req, res) {
+    app.post("/api/user/create", function(req, res) {
         db.User.create(req.body).then(function(data) {
             res.json(data);
         });
@@ -135,7 +135,7 @@ module.exports = function(app) {
     )
     */
 
-    app.get("/api/maint/:id", function(req, res) {
+    app.get("/api/user/:id", function(req, res) {
         db.User.findOne({
             where: {
                 id: req.params.id
@@ -152,7 +152,7 @@ module.exports = function(app) {
     //IN below object (has ID field required)
 
     //OUT: returns how many records updated
-    app.put("/api/maint/update", function(req, res) {
+    app.put("/api/user/update", function(req, res) {
         db.User.update(
             req.body, {
                 where: {
@@ -167,7 +167,7 @@ module.exports = function(app) {
     //IN: user id in form of a number
     //OUT: returns how many entries on jobs table deleted - assume 1 user on users table
 
-    app.delete("/api/maint/:id", function(req, res) {
+    app.delete("/api/user/:id", function(req, res) {
         // Delete the user with the id available to us in req.params.id
         db.Job.destroy({
 

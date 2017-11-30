@@ -85,7 +85,7 @@
 
          console.log('sent:');
          console.log(uObj);
-         $.post("/api/maint/create", uObj, function(data) {
+         $.post("/api/user/create", uObj, function(data) {
              console.log('received back:');
              console.log(data);
              var myJSON = JSON.stringify(data);
@@ -105,7 +105,7 @@
          console.log(id);
          $.ajax({
                  method: "GET",
-                 url: "/api/maint/" + id,
+                 url: "/api/user/" + id,
                  dataType: "json"
              })
              .done(function(data) {
@@ -159,7 +159,7 @@
          console.log(uObj);
          $.ajax({
                  method: "PUT",
-                 url: "/api/maint/update",
+                 url: "/api/user/update",
                  data: uObj,
                  dataType: "json"
              })
@@ -183,7 +183,7 @@
          console.log(id);
          $.ajax({
                  method: "DELETE",
-                 url: "/api/maint/" + id,
+                 url: "/api/user/" + id,
                  dataType: "json"
              })
              .done(function(data) {
