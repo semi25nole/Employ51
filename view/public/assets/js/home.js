@@ -2,11 +2,11 @@ $(document).ready(function() {
     // Getting reference to the job and location inputs //
     var jobInput = $("#job");
     var locationInput = $("#location");
-    var jobContainer = $(".job-container");
+    var jobContainer = $("#cardDiv");
 
     // Event listener to create objects //
-    $(document).on("#search", "#resultDiv", handleJobSubmit);
-    $(document).on("click", "#apply", handleApply);
+    $(document).on("#search", "#cardDiv", handleJobSubmit);
+    // $(document).on("click", "#apply", handleApply);
 
     // Getting job results //
     getJobs();
@@ -63,13 +63,13 @@ $(document).ready(function() {
     }
 
     // Function for handling what happens when the delete button is pressed
-    function handleApply() {
-        var listItemData = $(this).parent("td").parent("tr").data("job");
-        var id = listItemData.id;
-        $.ajax({
-                method: "GET",
-                url: "/api/jobs/" + id
-            })
-            .done(getJobs);
-    }
+    // function handleApply() {
+    //     var listItemData = $(this).parent("td").parent("tr").data("job");
+    //     var id = listItemData.id;
+    //     $.ajax({
+    //             method: "GET",
+    //             url: "/api/jobs/" + id
+    //         })
+    //         .done(getJobs);
+    // }
 });

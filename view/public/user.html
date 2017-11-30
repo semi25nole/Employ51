@@ -29,16 +29,22 @@
                         <h4 id="userMotto">Job search simplified</h4>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="applications">Applications</a>
+                        <a class="nav-link" href="#applicationsDiv" id="applications">Applications</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="resumes">Resumes</a>
+                        <a class="nav-link" href="#resumesDiv" id="resumes">Resumes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="savedJobs">Saved jobs</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html" id="logout">Logout</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="myAccount" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              My account
+                        </a>
+                        <div class="dropdown-menu" id="dropdownOptions" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Delete account</a>
+                            <a class="dropdown-item" href="home.html">Logout</a>
+                        </div>
                     </li>
                 </ul>
                 <ul class="nav" id="navSearch">
@@ -46,19 +52,70 @@
                         <form>
                             <input class="form-control mr-sm-2" type="search" placeholder="Job title or Keywords" id="userJob" aria-label="Search">
                             <input class="form-control mr-sm-2" type="location" placeholder="location" id="userLocation" aria-label="Location">
-                            <button class="btn btn-outline-success my-2 my-sm-0" id="userSearch" type="submit">Search</button>
+                            <button class="btn btn-outline-success my-2 my-sm-0" id="userSearch" type="button" data-toggle="collapse" data-target="#userSearchCardDiv">Search</button>
                         </form>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="job-container">
-            <div class="row">
-                <div class="col-lg">
-                    <div id="resultDiv"></div>
+        <!-- <div class="container"> -->
+        <!-- Cards -->
+        <div class="collapse" id="userSearchCardDiv">
+            <div class="card">
+                <h4 class="card-header">Company</h4>
+                <div class="card-body">
+                    <h4 class="card-title">Position</h4>
+                    <p class="card-text">Job description.</p>
+                    <a href="#" class="btn btn-primary">Apply</a>
+                    <a href="#" class="btn btn-success">Save</a>
+                    <a href="user.html" class="btn btn-secondary">Close</a>
                 </div>
             </div>
         </div>
+        <!-- </div> -->
+        <!-- Applications -->
+        <div class="collapse" id="applicationsDiv">
+            <div class="card">
+                <h4 class="card-header">Company</h4>
+                <div class="card-body">
+                    <h4 class="card-title">Position</h4>
+                    <p class="card-text">Job description.</p>
+                    <a href="user.html" class="btn btn-secondary">Close</a>
+                </div>
+            </div>
+        </div>
+        <!-- Resumes -->
+        <div class="collapse" id="resumesDiv">
+            <div class="card">
+                <h4 class="card-header">Company</h4>
+                <div class="card-body">
+                    <h4 class="card-title">Position</h4>
+                    <p class="card-text">Job description.</p>
+                    <a href="#" class="btn btn-danger">Delete</a>
+                    <form>
+                        <div class="form-group">
+                            <label for="uploadFormControlFile1">Upload your resume</label>
+                            <input type="file" class="form-control-file" id="resumeUpload">
+                        </div>
+                    </form>
+                    <a href="user.html" class="btn btn-secondary">Close</a>
+                </div>
+            </div>
+        </div>
+        <!-- Saved jobs -->
+        <div class="collapse" id="saveJobsDiv">
+            <div class="card">
+                <h4 class="card-header">Company</h4>
+                <div class="card-body">
+                    <h4 class="card-title">Position</h4>
+                    <p class="card-text">Job description.</p>
+                    <a href="#" class="btn btn-primary">Apply</a>
+                    <a href="user.html" class="btn btn-secondary">Close</a>
+                </div>
+            </div>
+        </div>
+
+
         <div class="push"></div>
         <div class="clearfix">
             <footer>
@@ -72,12 +129,9 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js " integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh " crossorigin="anonymous "></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js " integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ " crossorigin="anonymous "></script>
-        <script src="assets/js/app.js "></script>
+        <script src="assets/js/user.js "></script>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js " integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh " crossorigin="anonymous "></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js " integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ " crossorigin="anonymous "></script>
-        <script src="assets/js/app.js "></script>
+
 
 
         <script type="text/javascript ">
