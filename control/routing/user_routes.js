@@ -146,8 +146,27 @@ module.exports = function(app) {
     });
 
 
-
     //update user info
+    // PUT route for updating posts
+
+    //IN below object (has ID field required)
+
+    //OUT: returns how many records updated
+    app.put("/api/maint/update", function(req, res) {
+        db.User.update(
+            req.body, {
+                where: {
+                    uid: req.body.id
+                }
+            }).then(function(data) {
+            res.json(data);
+        });
+    });
+
+
+
+
+
     //delete user
 
 

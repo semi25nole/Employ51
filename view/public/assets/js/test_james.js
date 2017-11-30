@@ -6,24 +6,12 @@
      // $(document).on("submit", apiAuth); //authenication
      //$(document).on("submit", apiDisplay); //change function here to test different things
      //$(document).on("submit", apiUser_Create); //change function here to test different things
-     $(document).on("submit", apiUser_Read); //change function here to test different things
+     //  $(document).on("submit", apiUser_Read); //change function here to test different things
+     $(document).on("submit", apiUser_Update); //change function here to test different things
 
 
 
-     var dataObj = {
-         id: '20',
-         name: 'john Smith'
-     };
-
-
-
-
-
-     function apiU(params) {
-         $.post("/api/users", dataObj)
-             .then(doSomething);
-     }
-
+     //tests auth
      function apiAuth() {
          var authVar = {
              email: 'bigonet1@mit.edu',
@@ -42,6 +30,7 @@
 
      }
 
+     //tests user/hr 'full results (job and user info)
      function apiDisplay() {
          var displayVar = {
              id: '2'
@@ -57,6 +46,7 @@
          }, "json");
      }
 
+     //tests create user/hr
      function apiUser_Create() {
          event.preventDefault(); //crucial to see correct results!
 
@@ -103,6 +93,7 @@
          }, "json");
      }
 
+     //tests individual user/hr info from user table
      function apiUser_Read() {
          event.preventDefault(); //crucial to see correct results!
          // var listItemData = $(this).parent("td").parent("tr").data("author");
@@ -125,7 +116,58 @@
              });
      }
 
+     //update user/hr info (ID IS REQUIRED!)
+     function apiUser_Update() {
+         event.preventDefault(); //crucial to see correct results!
+         var uObj = { //required fields have *'s  below - all fields are strings
+             id: null, //*
+             first_name: null,
+             last_name: null,
+             email: null,
+             password: null,
+             if_company: null,
+             comp_name: null,
+             city: null,
+             state: null,
+             zip: null,
+             resume: null,
+             doc1: null,
+             doc2: null,
+             doc3: null
+         };
 
+         uObj = { //required fields have *'s  below - all fields are strings
+             id: 16, //*
+             first_name: 'John',
+             last_name: 'Public',
+             email: 'jq@public.com',
+             password: 'jennyjenny',
+             if_company: '0',
+             comp_name: '',
+             city: '',
+             state: '',
+             zip: '',
+             resume: '',
+             doc1: '',
+             doc2: '',
+             doc3: ''
+         };
+
+         console.log('sent:');
+         console.log(uObj);
+         $.ajax({
+                 method: "PUT",
+                 url: "/api/maint/update",
+                 data: uObj,
+                 dataType: "json"
+             })
+             .done(function(data) {
+                 console.log('received back:');
+                 console.log(data);
+                 var myJSON = JSON.stringify(data);
+                 $('#r').text(myJSON);
+             });
+     }
 
 
 
