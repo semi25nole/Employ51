@@ -66,4 +66,6 @@ jsconfig.json
 .vscode/
 .vscode/launch.json
 commit.md
+config.json
 
+config/config.json

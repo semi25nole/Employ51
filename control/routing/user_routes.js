@@ -50,13 +50,13 @@ module.exports = function(app) {
                     password = user.password;
                     fname = user.first_name;
                     lname = user.last_name;
-                    id = user.uid;
+                    id = user.id;
 
                     if (password === req.body.pass) {
                         resultObject = {
                             fname: user.first_name,
                             lname: user.last_name,
-                            id: user.uid
+                            id: user.id
                         };
                     }
                     res.json(resultObject); //return object - user match
@@ -78,7 +78,7 @@ module.exports = function(app) {
         //search for ID in db:
         db.User.findAll({
                 where: {
-                    uid: req.body.id //must exist
+                    id: req.body.id //must exist
                 },
                 include: [db.Job]
             })
@@ -90,7 +90,7 @@ module.exports = function(app) {
 
     });
 
-    //MAINTENENCE:
+
     //create user
     // POST route for saving a new post
 
@@ -117,10 +117,10 @@ module.exports = function(app) {
     //OUT:
     // Creates user in db and returns matching object:
     /*
-    {"uid":21,"first_name":"John","last_name":"Public","email":"jq@public.com","password":"8675309","if_company":"0","comp_name":"","city":"","state":"","zip":"","resume":"","doc1":"","doc2":"","doc3":"","updatedAt":"2017-11-30T00:01:17.997Z","createdAt":"2017-11-30T00:01:17.997Z"}
+    {"id":21,"first_name":"John","last_name":"Public","email":"jq@public.com","password":"8675309","if_company":"0","comp_name":"","city":"","state":"","zip":"","resume":"","doc1":"","doc2":"","doc3":"","updatedAt":"2017-11-30T00:01:17.997Z","createdAt":"2017-11-30T00:01:17.997Z"}
     */
 
-    app.post("/api/maint/create", function(req, res) {
+    app.post("/api/user/create", function(req, res) {
         db.User.create(req.body).then(function(data) {
             res.json(data);
         });
@@ -136,10 +136,10 @@ module.exports = function(app) {
     )
     */
 
-    app.get("/api/maint/:id", function(req, res) {
+    app.get("/api/user/:id", function(req, res) {
         db.User.findOne({
             where: {
-                uid: req.params.id
+                id: req.params.id
             }
         }).then(function(data) {
             res.json(data);
@@ -153,13 +153,37 @@ module.exports = function(app) {
     //IN below object (has ID field required)
 
     //OUT: returns how many records updated
-    app.put("/api/maint/update", function(req, res) {
+    app.put("/api/user/update", function(req, res) {
         db.User.update(
             req.body, {
                 where: {
-                    uid: req.body.id
+                    id: req.body.id
                 }
             }).then(function(data) {
+            res.json(data);
+        });
+    });
+
+    //delete user
+    //IN: user id in form of a number
+    //OUT: returns how many entries on jobs table deleted - assume 1 user on users table
+
+    app.delete("/api/user/:id", function(req, res) {
+        // Delete the user with the id available to us in req.params.id
+        db.Job.destroy({
+
+            where: {
+                UserId: req.params.id //must exist
+            }
+        })
+
+        .then(function(data) {
+            db.User.destroy({
+
+                where: {
+                    id: req.params.id //must exist
+                }
+            })
             res.json(data);
         });
     });
@@ -168,40 +192,8 @@ module.exports = function(app) {
 
 
 
-    //delete user
 
 
-    //** anything below this line - disregard **
-
-    // Find all Users and return them to the user with res.json
-    app.get("/api/users", function(req, res) {
-        db.User.findAll({}).then(function(dbUser) {
-            res.json(dbUser);
-        });
-    });
-
-    app.get("/api/users/:uid", function(req, res) {
-        // Find one User with the id in req.params.id and return them to the user with res.json
-        db.User.findOne({
-            where: {
-                uid: req.params.uid
-            }
-        }).then(function(dbUser) {
-            res.json(dbUser);
-        });
-    });
-
-    //use post to request information (with qualifiers)
-    app.post("/api/users", function(req, res) {
-        db.Post.create(req.body).then(function(dbPost) {
-            res.json(dbPost);
-        });
-    });
-
-    //UPDATE 
-
-
-    //DELETE 
 
 
 

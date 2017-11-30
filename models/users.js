@@ -2,12 +2,12 @@
 
 module.exports = function(sequelize, DataTypes) {
     var User = sequelize.define('User', {
-        uid: {
-            type: DataTypes.INTEGER(11),
-            allowNull: false,
-            primaryKey: true,
-            autoIncrement: true
-        },
+        // uid: {
+        //     type: DataTypes.INTEGER(11),
+        //     allowNull: false,
+        //     primaryKey: true,
+        //     autoIncrement: true
+        // },
         first_name: {
             type: DataTypes.STRING(255),
             allowNull: true
@@ -70,10 +70,10 @@ module.exports = function(sequelize, DataTypes) {
     });
 
     User.associate = function(models) {
-        // Associating Author with Posts
-        // When an Author is deleted, also delete any associated Posts
+        // Associating User with Job
+        // When an User is deleted, also delete any associated Jobs
         User.hasMany(models.Job, {
-            onDelete: "cascade"
+            onDelete: 'cascade'
         });
     };
 

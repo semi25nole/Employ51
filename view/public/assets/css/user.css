@@ -114,6 +114,16 @@ body {
     position: absolute;
 }
 
+<<<<<<< HEAD
+=======
+img {
+    vertical-align: middle;
+    border-style: none;
+    position: relative;
+    left: 110px;
+}
+
+>>>>>>> 16f28e9bcd5dfddfb0cd3a31c3a1c3039ffe1d8c
 #sadPhoto {
     height: 300px;
 }
