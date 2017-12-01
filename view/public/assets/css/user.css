@@ -56,18 +56,56 @@ body {
 #applications {
     /* text-align: left; */
     position: absolute;
-    left: 455px;
+    left: 415px;
     /* text-align: left; */
+    background-color: inherit;
+    border: inherit;
+    color: #007bff;
+}
+
+#myResumes {
+    position: absolute;
+    left: 388px;
+    /* top: -7px; */
+    width: max-content;
+}
+
+#resumeOptions {
+    background-color: yellowgreen;
 }
 
 #resumes {
-    position: absolute;
-    left: 595px;
+    border: yellowgreen;
+    background-color: inherit;
+}
+
+#uploadMyResume {
+    border: yellowgreen;
+    background-color: inherit;
+}
+
+#uploadForm {
+    background-color: burlywood;
+}
+
+#uploadLabel {
+    font-family: 'Indie Flower', cursive;
+    padding: 10px;
+    color: maroon;
+    width: 230%;
+    font-size: xx-large;
+}
+
+#fileUpload {
+    padding: 10px;
 }
 
 #savedJobs {
     position: absolute;
-    left: 705px;
+    left: 750px;
+    background-color: inherit;
+    border: inherit;
+    color: #007bff;
 }
 
 #createAccount {
