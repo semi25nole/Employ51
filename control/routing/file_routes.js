@@ -14,9 +14,9 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname, "../../view/public/HR.html"));
     });
 
-    app.get("/user", function(req, res) {
-        res.sendFile(path.join(__dirname, "../../view/public/user.html"));
-    });
+    // app.get("/user", function(req, res) {
+    //     res.sendFile(path.join(__dirname, "../../view/public/user.html"));
+    // });
 
     app.get("/testjames", function(req, res) {
         res.sendFile(path.join(__dirname, "../../view/public/test_james.html")); //TODO: remove before going live
@@ -25,5 +25,7 @@ module.exports = function(app) {
     app.get("/testkyle", function(req, res) {
         res.sendFile(path.join(__dirname, "../../view/public/test_kyle.html")); //TODO: remove before going live
     });
+
+
 
 };

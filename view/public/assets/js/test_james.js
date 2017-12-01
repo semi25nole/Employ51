@@ -12,7 +12,8 @@ $(document).ready(function() {
     //$(document).on("submit", apiJob_Read); 
     //$(document).on("submit", apiJob_Update);
     //  $(document).on("submit", apiJob_Delete);
-    $('button').on("click", mySearch('developer', '')); //triggers on page load and button click (?)
+    // $('button').on("click", mySearch('developer', '')); //triggers on page load and button click (?)
+    $(document).on("click", pageRoute_User);
 
     var array;
 
@@ -355,6 +356,23 @@ $(document).ready(function() {
     }
 
 
+    //FILE ROUTES
+
+    function pageRoute_User() {
+        event.preventDefault(); //crucial to see correct results!
+        var id = 3;
+        $.ajax({
+            method: "GET",
+            url: "/user" + id
+                // dataType: "json"
+        });
+        // .done(function(data) {
+        //     console.log('received back:');
+        //     console.log(data);
+        //     var myJSON = JSON.stringify(data);
+        //     $('#r').text(myJSON);
+        // });
+    }
 
 
 
