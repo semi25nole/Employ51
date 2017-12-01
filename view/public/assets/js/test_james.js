@@ -1,9 +1,10 @@
  //require('jquery');
 
  $(document).ready(function() {
+     //  var search = require("./search.js");
 
      //change function here to test different things
-     $(document).on("submit", apiAuth); //authenication
+     //  $(document).on("submit", apiAuth); //authenication
      //$(document).on("submit", apiDisplay); 
      //$(document).on("submit", apiUser_Create); 
      //$(document).on("submit", apiUser_Read); 
@@ -13,6 +14,24 @@
      //$(document).on("submit", apiJob_Read); 
      //$(document).on("submit", apiJob_Update);
      //  $(document).on("submit", apiJob_Delete);
+     $('button').on("click", mySearch('developer', '')); //triggers on page load and button click (?)
+
+     function mySearch(search, location) {
+         var sObj = {
+             s: search,
+             l: location
+         };
+
+         console.log('sent:');
+         console.log(sObj);
+         $.post("/api/search", sObj, function(data) {
+             console.log('received back:');
+             console.log(data);
+             var myJSON = JSON.stringify(data);
+             $('#r').text(myJSON);
+         }, "json");
+
+     }
 
 
      // ** USER **
