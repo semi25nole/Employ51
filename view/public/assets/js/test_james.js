@@ -28,7 +28,7 @@ $(document).ready(function() {
             console.log('received back:');
             console.log(data);
             var myJSON = JSON.stringify(data);
-            // $('#r').text(myJSON);
+
             console.log('array:');
             var array = data.listings.listing;
             console.log(array);
@@ -54,6 +54,7 @@ $(document).ready(function() {
                 r.append(job_title).append(h);
 
             }
+
 
         }, "json");
 
