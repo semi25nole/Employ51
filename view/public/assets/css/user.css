@@ -106,8 +106,25 @@ body {
     color: #ffc107;
 }
 
+.modal {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    bottom: 0;
+    left: 70px;
+    z-index: 10040;
+    overflow: auto;
+    overflow-y: auto;
+}
+
 .modal-header {
-    background-color: sienna;
+    background-color: #795548;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: maroon;
 }
 
 #deleteModal {
