@@ -3,7 +3,7 @@
  $(document).ready(function() {
 
      //change function here to test different things
-     // $(document).on("submit", apiAuth); //authenication
+     $(document).on("submit", apiAuth); //authenication
      //$(document).on("submit", apiDisplay); 
      //$(document).on("submit", apiUser_Create); 
      //$(document).on("submit", apiUser_Read); 
@@ -12,7 +12,7 @@
      //$(document).on("submit", apiJob_Create); 
      //$(document).on("submit", apiJob_Read); 
      //$(document).on("submit", apiJob_Update);
-     $(document).on("submit", apiJob_Delete);
+     //  $(document).on("submit", apiJob_Delete);
 
 
      // ** USER **
