@@ -1,8 +1,55 @@
 //Grab the models folder
 var db = require("../../models");
+var cors = require('cors');
+var request = require("request");
 
 //Routes
 module.exports = function(app) {
+
+    //SEARCH:
+    // app.post("/api/search", cors(), function(req, res, next) {
+    app.post("/api/search", function(req, res) {
+        // db.User.create(req.body).then(function(data) {
+        //     res.json(data);
+        // });
+
+        var search = req.body.s || 'developer'; //default value
+        var loc = req.body.l || 'remote';
+
+        var queryURL = 'https://authenticjobs.com/api/?api_key=eef2ebd00509e1f156de2fe3ea5065c8&method=aj.jobs.search&perpage=15&format=json&query=' + search + '&location=' + loc;
+
+
+        // $.ajax({
+        //         method: "GET",
+        //         url: queryURL
+        //             // dataType: "json"
+        //     })
+        //     .done(function(data) {
+        //         // console.log('received back:');
+        //         // console.log(data);
+        //         // var myJSON = JSON.stringify(data);
+        //         // $('#r').text(myJSON);
+        //         res.json(data);
+
+        //     });
+
+        request(queryURL, function(error, response, body) {
+
+            // If the request is successful (i.e. if the response status code is 200)
+            if (!error && response.statusCode === 200) {
+
+                // Parse the body of the site and recover just the imdbRating
+                // (Note: The syntax below for parsing isn't obvious. Just spend a few moments dissecting it).
+                // console.log("The movie's rating is: " + JSON.parse(body).imdbRating);
+                // var tt = JSON.parse(body);
+                res.json(JSON.parse(body));
+            }
+        });
+
+    });
+
+
+
 
     //AUTHENTICATION: 
 
