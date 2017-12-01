@@ -41,7 +41,8 @@ module.exports = function(app) {
                 // Parse the body of the site and recover just the imdbRating
                 // (Note: The syntax below for parsing isn't obvious. Just spend a few moments dissecting it).
                 // console.log("The movie's rating is: " + JSON.parse(body).imdbRating);
-                res.json(body);
+                // var tt = JSON.parse(body);
+                res.json(JSON.parse(body));
             }
         });
 
