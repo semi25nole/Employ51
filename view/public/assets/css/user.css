@@ -106,8 +106,30 @@ body {
     color: #ffc107;
 }
 
+<<<<<<< HEAD
+.modal {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    bottom: 0;
+    left: 70px;
+    z-index: 10040;
+    overflow: auto;
+    overflow-y: auto;
+}
+
+.modal-header {
+    background-color: #795548;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: maroon;
+=======
 .modal-header {
     background-color: sienna;
+>>>>>>> 16f28e9bcd5dfddfb0cd3a31c3a1c3039ffe1d8c
 }
 
 #deleteModal {
@@ -123,6 +145,10 @@ img {
 
 #sadPhoto {
     height: 300px;
+<<<<<<< HEAD
+    border: inherit;
+=======
+>>>>>>> 16f28e9bcd5dfddfb0cd3a31c3a1c3039ffe1d8c
 }
 
 #areYouSure {
