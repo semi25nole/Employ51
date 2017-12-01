@@ -50,8 +50,9 @@
                 <div class="card-body">
                     <h4 class="card-title">Position</h4>
                     <p class="card-text">Job description.</p>
-                    <a href="login.html" class="btn btn-primary">Apply</a>
-                    <a href="home.html" class="btn btn-secondary">Close</a>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#jobDescriptionModal" id="jobDescriptionApply">See more...</button>
+                    <!-- <a href="login.html" class="btn btn-primary">Apply</a>
+                    <a href="home.html" class="btn btn-secondary">Close</a> -->
                 </div>
             </div>
         </div>
@@ -62,7 +63,22 @@
                 &copy; Copyright 2017 Employ51
             </footer>
         </div>
-
+        <div class="modal fade" id="jobDescriptionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="individualJobTitle">Logo/Job title<span class="badge badge-primary">Full time</span></h3>
+                    </div>
+                    <div class="modal-body" id="jobDescriptionModal">
+                        <p>Job description</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="login.html" class="btn btn-primary" id="loginHomeModal">Apply</a>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -79,18 +95,18 @@
             //     $("#cardDiv").hide();
             // });
 
-            // $('#createAccount').on('click', function() {
-            //     $('#createModal').show();
-            // });
+            $('#createAccount').on('click', function() {
+                $('#createModal').show();
+            });
 
 
-            // $('#closeModal').on('click', function() {
-            //     close();
-            // });
+            $('#closeModal').on('click', function() {
+                close();
+            });
 
-            // function close() {
-            //     $('#createModal').hide();
-            // };
+            function close() {
+                $('#createModal').hide();
+            };
         </script>
 
 </body>
