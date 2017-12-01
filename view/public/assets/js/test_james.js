@@ -55,13 +55,9 @@ $(document).ready(function() {
 
             }
 
-
-
         }, "json");
 
 
-
-        //  var array = data.listings.listing;
 
 
 
