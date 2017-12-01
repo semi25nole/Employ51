@@ -106,10 +106,6 @@ body {
     color: #ffc107;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 66fe3dc4542e8af8c1c9b212c598eba58746cfe1
 .modal {
     position: absolute;
     top: 50px;
@@ -129,13 +125,6 @@ body {
     margin-bottom: 0;
     line-height: 1.5;
     color: maroon;
-<<<<<<< HEAD
-=======
-=======
-.modal-header {
-    background-color: sienna;
->>>>>>> 16f28e9bcd5dfddfb0cd3a31c3a1c3039ffe1d8c
->>>>>>> 66fe3dc4542e8af8c1c9b212c598eba58746cfe1
 }
 
 #deleteModal {
@@ -151,14 +140,7 @@ img {
 
 #sadPhoto {
     height: 300px;
-<<<<<<< HEAD
     border: inherit;
-=======
-<<<<<<< HEAD
-    border: inherit;
-=======
->>>>>>> 16f28e9bcd5dfddfb0cd3a31c3a1c3039ffe1d8c
->>>>>>> 66fe3dc4542e8af8c1c9b212c598eba58746cfe1
 }
 
 #areYouSure {
