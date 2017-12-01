@@ -29,13 +29,19 @@
                         <h4 id="userMotto">Job search simplified</h4>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#applicationsDiv" id="applications">Applications</a>
+                        <button class="nav-link" data-toggle="modal" data-target="#applicationModal" id="applications">Applications</button>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="myResumes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        My Resumes
+                        </a>
+                        <div class="dropdown-menu" id="resumeOptions" aria-labelledby="navbarDropdown">
+                            <button class="nav-link" data-toggle="modal" data-target="#resumeModal" id="resumes">Resumes</button>
+                            <button class="nav-link" data-toggle="modal" data-target="#uploadResume" id="uploadMyResume">Upload Resume</button>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#resumesDiv" id="resumes">Resumes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="savedJobs">Saved jobs</a>
+                        <button class="nav-link" data-toggle="modal" data-target="#savedJobModal" id="savedJobs">Saved Jobs</button>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="myAccount" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -74,16 +80,16 @@
         </div>
         <!-- </div> -->
         <!-- Applications -->
-        <div class="collapse" id="applicationsDiv">
+        <!-- <div class="collapse" id="applicationsDiv">
             <div class="card">
                 <h4 class="card-header">Company</h4>
                 <div class="card-body">
                     <h4 class="card-title">Position</h4>
                     <p class="card-text">Job description.</p>
-                    <a href="user.html" class="btn btn-secondary">Close</a>
+                    <a href="" class="btn btn-secondary">Close</a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Resumes -->
         <div class="collapse" id="resumesDiv">
             <div class="card">
@@ -92,12 +98,6 @@
                     <h4 class="card-title">Position</h4>
                     <p class="card-text">Job description.</p>
                     <a href="#" class="btn btn-danger">Delete</a>
-                    <form>
-                        <div class="form-group">
-                            <label for="uploadFormControlFile1">Upload your resume</label>
-                            <input type="file" class="form-control-file" id="resumeUpload">
-                        </div>
-                    </form>
                     <a href="user.html" class="btn btn-secondary">Close</a>
                 </div>
             </div>
@@ -145,6 +145,82 @@
             </div>
         </div>
 
+        <!-- Application Modal -->
+        <div class="modal fade" id="applicationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="resumeLabel">Name of Company</h5>
+                    </div>
+                    <div class="modal-body" id="resumeDescription">
+                        <p>Job description</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Resume Modal -->
+        <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="resumeLabel">Title of Specific Resume</h5>
+                    </div>
+                    <div class="modal-body" id="resumeDescription">
+                        <p>Resume description</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Upload Resume -->
+        <div class="modal fade bd-example-modal-sm" id="uploadResume" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <form id="uploadForm">
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1" id="uploadLabel">Upload Resume</label>
+                            <input type="file" class="form-control-file" id="fileUpload">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Saved Jobs Modal -->
+        <div class="modal fade" id="savedJobModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="savedJobLabel">My Saved Jobs</h5>
+                    </div>
+                    <div class="modal-body" id="savedJobDescription">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect2">Example multiple select</label>
+                            <select multiple class="form-control" id="exampleFormControlSelect2">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="applySavedJob">Apply</button>
+                        <button type="button" class="btn btn-primary" id="deleteSavedJob">Delete</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -170,6 +246,12 @@
             function close() {
                 $('#deleteModal').hide();
             };
+
+            // $("#applications").on("click", function() {
+            //             $('<div>', {
+            //                 class = "btn btn-primary",
+
+            //             })
         </script>
 
 </body>
