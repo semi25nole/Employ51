@@ -106,3 +106,16 @@ footer {
     top: 600px;
     left: 575px;
 }
+
+#pos, #pos2, #comp {
+    font-family: 'indie flower', cursive;
+    color: maroon;
+    font-weight: bold;
+}
+
+#loc {
+    font-size: 23px;
+    font-family: 'indie flower';
+    color: maroon;
+    font-weight: bold;
+}

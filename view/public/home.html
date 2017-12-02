@@ -46,10 +46,11 @@
         </div>
         <div class="collapse" id="cardDiv">
             <div class="card">
-                <h4 class="card-header">Company</h4>
+                <h4 class="card-header" id='comp'>Company</h4>
                 <div class="card-body">
-                    <h4 class="card-title">Position</h4>
-                    <p class="card-text">Job description.</p>
+                    <h4 class="card-title" id='pos'>Position</h4>
+                    <p>___________________________________________________</p>
+                    <h4 class='card-title' id='pos2'>Perks</h4>
                     <button class="btn btn-primary" data-toggle="modal" data-target="#jobDescriptionModal" id="jobDescriptionApply">See more...</button>
                     <!-- <a href="login.html" class="btn btn-primary">Apply</a>
                     <a href="home.html" class="btn btn-secondary">Close</a> -->
@@ -67,10 +68,10 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h3 class="modal-title" id="individualJobTitle">Logo/Job title<span class="badge badge-primary">Full time</span></h3>
+                        <h3 class="modal-title" id="loc">Logo/Job title<span class="badge badge-primary">Full time</span></h3>
                     </div>
                     <div class="modal-body" id="jobDescriptionModal">
-                        <p>Job description</p>
+                        <p id='desc'>Job description</p>
                     </div>
                     <div class="modal-footer">
                         <a href="login.html" class="btn btn-primary" id="loginHomeModal">Apply</a>
@@ -82,7 +83,7 @@
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js " integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh " crossorigin="anonymous "></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js " integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ " crossorigin="anonymous "></script>
         <script src="assets/js/home.js "></script>
@@ -91,10 +92,7 @@
 
 
         <script type="text/javascript ">
-            // $("#search").on("click", function() {
-            //     $("#cardDiv").hide();
-            // });
-
+            
             $('#createAccount').on('click', function() {
                 $('#createModal').show();
             });
@@ -107,6 +105,7 @@
             function close() {
                 $('#createModal').hide();
             };
+
         </script>
 
 </body>

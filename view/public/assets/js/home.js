@@ -1,106 +1,94 @@
-$(document).ready(function() { //jQuery load page start
-
-
-
-    // Getting reference to the job and location inputs //
-    var jobInput = $("#job");
-    var locationInput = $("#location");
-    var jobContainer = $("#cardDiv");
-
-    // Event listener to create objects //
-    $(document).on("#search", "#cardDiv", handleJobSubmit);
-    // $(document).on("click", "#apply", handleApply);
-
-    // Getting job results //
-    getJobs();
-
-    // Function to handle what happens when submit
-    function handleJobSubmit(event) {
-        event.preventDefault();
-        // Don't do anything if the job field or location hasn't been filled out
-        if (!jobInput.val().trim().trim()) {
-            return;
-        } else if (!locationInput.val().trim().trim()) {
-            return;
+var array;
+    
+            $('#search').on('click', function() {
+                mySearch();
+              
+                                      
+        function mySearch(search, location) {
+            var sObj = {
+                s: search,
+                l: location
+            };
+          
+            $.post("/api/search", sObj, function(data) {
+               
+                var myJSON = JSON.stringify(data);
+    
+               
+                var array = data.listings.listing;
+                console.log(array);
+    
+                for (var index = 0; index < array.length; index++) {
+    
+                    var job_title = array[index].title; //VARCHAR(255) NOT NULL, // listings.listing[0].title (string)
+                    var job_desc = array[index].description; //LONGTEXT DEFAULT NULL, // listings.listing[0].description (string - HTML)
+                    var job_posted = array[index].post_date; //VARCHAR(255) DEFAULT NULL, // listings.listing[0].post_date (string - Date/Time)
+                    var if_remote = array[index].telecommuting; //INT DEFAULT 0, // listings.listing[0].telecommuting (int - boolean)
+                    var job_type_id = array[index].category.id; //VARCHAR(10), // listings.listing[0].category.id (int)
+                    var job_type_name = array[index].category.name; //VARCHAR(255), // listings.listing[0].category.name (string)
+                    var if_ft = array[index].type.id; //INT DEFAULT 1, // listings.listing[0].type.id (boolean int)
+                    var comp_name = array[index].company.name; //VARCHAR(255), // listings.listing[0].comp.name (string)
+                    var comp_url = array[index].company.url; //VARCHAR(255), // listings.listing[0].comp.url (string - HTML)
+                    var comp_loc = array[index].company.location.name; //VARCHAR(255), // listings.listing[0].comp.location.name
+                    var comp_logo = array[index].company.logo; //VARCHAR(255), // listings.listing[0].company.logo (string - HTML)
+                    var apply_url = array[index].apply_url; //VARCHAR(255), // listings.listing[0].apply_url (string - HTML)
+                    var job_url = array[index].url; //VARCHAR(255), // listings.listing[0].url (string - HTML)
+    
+                    $('#comp').text('Overview: ' + array[index].company.name);
+                    $('#pos2').text('Perks: ' + array[index].perks);
+                    $('#pos').text(array[index].company.tagline);
+    
+                }
+    
+            }, "json");
+    
         }
-    }
 
-    // Function for creating a new list row for jobs
-    function createJobRow(jobData) {
-        var newTr = $("<tr>");
-        newTr.data("job", jobData);
-        newTr.append("<td>" + jobData.name + "</td>");
-        newTr.append("<td> " + jobData.Posts.length + "</td>");
-        return newTr;
-    }
+    });
+        
+    var array;
+    
+            $('#jobDescriptionApply').on('click', function() {
+                mySearch();
+              
+                                      
+        function mySearch(search, location) {
+            var sObj = {
+                s: search,
+                l: location
+            };
+          
+            $.post("/api/search", sObj, function(data) {
+               
+                var myJSON = JSON.stringify(data);
+    
+               
+                var array = data.listings.listing;
+                console.log(array);
+    
+                for (var index = 0; index < array.length; index++) {
+    
+                    var job_title = array[index].title; //VARCHAR(255) NOT NULL, // listings.listing[0].title (string)
+                    var job_desc = array[index].description; //LONGTEXT DEFAULT NULL, // listings.listing[0].description (string - HTML)
+                    var job_posted = array[index].post_date; //VARCHAR(255) DEFAULT NULL, // listings.listing[0].post_date (string - Date/Time)
+                    var if_remote = array[index].telecommuting; //INT DEFAULT 0, // listings.listing[0].telecommuting (int - boolean)
+                    var job_type_id = array[index].category.id; //VARCHAR(10), // listings.listing[0].category.id (int)
+                    var job_type_name = array[index].category.name; //VARCHAR(255), // listings.listing[0].category.name (string)
+                    var if_ft = array[index].type.id; //INT DEFAULT 1, // listings.listing[0].type.id (boolean int)
+                    var comp_name = array[index].company.name; //VARCHAR(255), // listings.listing[0].comp.name (string)
+                    var comp_url = array[index].company.url; //VARCHAR(255), // listings.listing[0].comp.url (string - HTML)
+                    var comp_loc = array[index].company.location.name; //VARCHAR(255), // listings.listing[0].comp.location.name
+                    var comp_logo = array[index].company.logo; //VARCHAR(255), // listings.listing[0].company.logo (string - HTML)
+                    var apply_url = array[index].apply_url; //VARCHAR(255), // listings.listing[0].apply_url (string - HTML)
+                    var job_url = array[index].url; //VARCHAR(255), // listings.listing[0].url (string - HTML)
 
-    // Function for retrieving jobs and getting them ready to be rendered to the page
-    function getJobs() {
-        $.get("/api/jobs", function(data) {
-            var rowsToAdd = [];
-            for (var i = 0; i < data.length; i++) {
-                rowsToAdd.push(createJobRow(data[i]));
-            }
-            renderJobList(rowsToAdd);
-            jobInput.val("");
-        });
-    }
-
-    // A function for rendering the list of jobs to the page
-    function renderJobList(rows) {
-        jobList.children().not(":last").remove();
-        if (rows.length) {
-            console.log(rows);
-            jobList.prepend(rows);
-        } else {
-            renderEmpty();
+                   $('#desc').html('<a href=' + job_url + '>' + 'Click here for more Info' + '</a>');
+                   $('#loc').text(comp_loc);
+    
+                }
+    
+            }, "json");
+    
         }
-    }
 
-    // Function for handling what to render when there are no jobs
-    function renderEmpty() {
-        var alertDiv = $("<div>");
-        alertDiv.addClass("alert alert-danger");
-        alertDiv.text("Sorry, no jobs found.");
-        jobContainer.append(alertDiv);
-    }
-
-    // Function for handling what happens when the delete button is pressed
-    // function handleApply() {
-    //     var listItemData = $(this).parent("td").parent("tr").data("job");
-    //     var id = listItemData.id;
-    //     $.ajax({
-    //             method: "GET",
-    //             url: "/api/jobs/" + id
-    //         })
-    //         .done(getJobs);
-    // }
-
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// DO NOT TOUCH!
-    function mySearch(search, location) {
-        var sObj = {
-            s: search,
-            l: location
-        };
-
-        console.log('sent:');
-        console.log(sObj);
-        $.post("/api/search", sObj, function(data) {
-            console.log('received back:');
-            console.log(data);
-            var myJSON = JSON.stringify(data);
-            $('#r').text(data);
-        }, "json");
-
-    }
-
-
-
-
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// DO NOT TOUCH!
-
-
-
-
-
-}); //jQuery load page end
+    });

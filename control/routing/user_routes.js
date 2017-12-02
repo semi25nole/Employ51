@@ -34,6 +34,7 @@ module.exports = function(app) {
     //authentication (new and existing users)
     //use post to request information (with qualifiers)
     app.post("/api/auth", function(req, res) {
+        
         //INPUT:
         // object - example: {email: "bigonet1@mit.edu", pass: "Q3OiMPsw5f"}
 
