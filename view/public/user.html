@@ -32,16 +32,10 @@
                     <!-- <button class="nav-link" data-toggle="modal" data-target="#applicationModal" id="applications">Applications</button> -->
                     <!-- <button class="nav-link" id="applications">Applications</button> -->
                     <!-- </li> -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="myResumes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        My Resumes
-                        </a>
-                        <div class="dropdown-menu" id="resumeOptions" aria-labelledby="navbarDropdown">
-                            <!-- <button class="nav-link" data-toggle="modal" data-target="#resumeModal" id="resumes">Resumes</button> -->
-                            <button class="nav-link" id="resumes">Resumes</button>
-                            <!-- <button class="nav-link" data-toggle="modal" data-target="#uploadResume" id="uploadMyResume">Upload Resume</button> -->
-                            <button class="nav-link" id="uploadMyResume">Upload Resume</button>
-                        </div>
+
+                    <li class="nav-item">
+                        <!-- <button class="nav-link" data-toggle="modal" data-target="#savedJobModal" id="savedJobs">Saved Jobs</button> -->
+                        <button class="nav-link" id="resumeOptions">Documents</button>
                     </li>
                     <li class="nav-item">
                         <!-- <button class="nav-link" data-toggle="modal" data-target="#savedJobModal" id="savedJobs">Saved Jobs</button> -->
@@ -142,7 +136,7 @@
                         <h5 id="areYouSure">We are sad to see you go... Are you sure?</h5>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-danger">Yes</button>
+                        <button type="button" class="btn btn-danger" id="del_yes">Yes</button>
                         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -181,17 +175,17 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="resumeLabel">My Resumes</h5>
+                        <h5 class="modal-title" id="resumeLabel">My Documents</h5>
                     </div>
                     <div class="modal-body" id="myResume">
                         <div class="form-group">
                             <label for="exampleFormControlSelect2">Please select from below:</label>
-                            <select multiple class="form-control" id="exampleFormControlSelect2">
-                                    <option>1</option>
+                            <select class="form-control" id="myResume_select">
+                                    <!-- <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
-                                    <option>5</option>
+                                    <option>5</option> -->
                                 </select>
                         </div>
                     </div>
@@ -224,18 +218,19 @@
                     </div>
                     <div class="modal-body" id="savedJobDescription">
                         <div class="form-group">
-                            <label for="exampleFormControlSelect2">Please select from below</label>
-                            <select multiple class="form-control" id="exampleFormControlSelect2">
-                                <option>1</option>
+                            <label for="exampleFormControlSelect2">Please select one from below:</label>
+                            <select id="mySavedJobs_select">
+                                    <!-- <select class="form-control" id="mySavedJobs_select"> -->
+                                <!-- <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
-                                <option>5</option>
+                                <option>5</option> -->
                             </select>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="applySavedJob">Apply</button>
+                        <!-- <button type="button" class="btn btn-primary" id="applySavedJob">Apply</button> -->
                         <button type="button" class="btn btn-primary" id="deleteSavedJob">Delete</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
@@ -246,7 +241,8 @@
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js " integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh " crossorigin="anonymous "></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js " integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ " crossorigin="anonymous "></script>
         <script src="assets/js/user.js "></script>
