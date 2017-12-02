@@ -1,4 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function() { //jQuery load page start
+
+
+
     // Getting reference to the job and location inputs //
     var jobInput = $("#job");
     var locationInput = $("#location");
@@ -72,4 +75,32 @@ $(document).ready(function() {
     //         })
     //         .done(getJobs);
     // }
-});
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// DO NOT TOUCH!
+    function mySearch(search, location) {
+        var sObj = {
+            s: search,
+            l: location
+        };
+
+        console.log('sent:');
+        console.log(sObj);
+        $.post("/api/search", sObj, function(data) {
+            console.log('received back:');
+            console.log(data);
+            var myJSON = JSON.stringify(data);
+            $('#r').text(data);
+        }, "json");
+
+    }
+
+
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// DO NOT TOUCH!
+
+
+
+
+
+}); //jQuery load page end

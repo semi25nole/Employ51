@@ -56,18 +56,56 @@ body {
 #applications {
     /* text-align: left; */
     position: absolute;
-    left: 455px;
+    left: 415px;
     /* text-align: left; */
+    background-color: inherit;
+    border: inherit;
+    color: #007bff;
+}
+
+#myResumes {
+    position: absolute;
+    left: 388px;
+    /* top: -7px; */
+    width: max-content;
+}
+
+#resumeOptions {
+    background-color: yellowgreen;
 }
 
 #resumes {
-    position: absolute;
-    left: 595px;
+    border: yellowgreen;
+    background-color: inherit;
+}
+
+#uploadMyResume {
+    border: yellowgreen;
+    background-color: inherit;
+}
+
+#uploadForm {
+    background-color: burlywood;
+}
+
+#uploadLabel {
+    font-family: 'Indie Flower', cursive;
+    padding: 10px;
+    color: maroon;
+    width: 230%;
+    font-size: xx-large;
+}
+
+#fileUpload {
+    padding: 10px;
 }
 
 #savedJobs {
     position: absolute;
-    left: 705px;
+    left: 750px;
+    background-color: inherit;
+    border: inherit;
+    color: #007bff;
 }
 
 #createAccount {
@@ -106,8 +144,25 @@ body {
     color: #ffc107;
 }
 
+.modal {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    bottom: 0;
+    left: 70px;
+    z-index: 10040;
+    overflow: auto;
+    overflow-y: auto;
+}
+
 .modal-header {
-    background-color: sienna;
+    background-color: #795548;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: maroon;
 }
 
 #deleteModal {
@@ -126,6 +181,7 @@ img {
 >>>>>>> 16f28e9bcd5dfddfb0cd3a31c3a1c3039ffe1d8c
 #sadPhoto {
     height: 300px;
+    border: inherit;
 }
 
 #areYouSure {

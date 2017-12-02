@@ -1,8 +1,33 @@
 //Grab the models folder
 var db = require("../../models");
+var cors = require('cors');
+var request = require("request");
 
 //Routes
 module.exports = function(app) {
+
+    //SEARCH:
+
+    app.post("/api/search", function(req, res) {
+
+        var search = req.body.s || 'developer'; //default value
+        var loc = req.body.l || 'remote';
+
+        var queryURL = 'https://authenticjobs.com/api/?api_key=eef2ebd00509e1f156de2fe3ea5065c8&method=aj.jobs.search&perpage=15&format=json&query=' + search + '&location=' + loc;
+
+        request(queryURL, function(error, response, body) {
+            // If the request is successful (i.e. if the response status code is 200)
+            if (!error && response.statusCode === 200) {
+                res.json(JSON.parse(body));
+            } else {
+                res.json(JSON.parse(error));
+            }
+        });
+
+    });
+
+
+
 
     //AUTHENTICATION: 
 
