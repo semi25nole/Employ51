@@ -33,11 +33,13 @@ var array;
                     var comp_logo = array[index].company.logo; //VARCHAR(255), // listings.listing[0].company.logo (string - HTML)
                     var apply_url = array[index].apply_url; //VARCHAR(255), // listings.listing[0].apply_url (string - HTML)
                     var job_url = array[index].url; //VARCHAR(255), // listings.listing[0].url (string - HTML)
+
     
-                    $('#comp').text('Overview: ' + array[index].company.name);
-                    $('#pos2').text('Perks: ' + array[index].perks);
-                    $('#pos').text(array[index].company.tagline);
-    
+                    $('#comp').text('Company: ' + array[0].company.name);
+                    $('#pos2').text('Title: ' + array[0].title);
+                    $('#pos').text('Type: ' + array[0].type.name);
+
+                      
                 }
     
             }, "json");
@@ -82,8 +84,8 @@ var array;
                     var apply_url = array[index].apply_url; //VARCHAR(255), // listings.listing[0].apply_url (string - HTML)
                     var job_url = array[index].url; //VARCHAR(255), // listings.listing[0].url (string - HTML)
 
-                   $('#desc').html('<a href=' + job_url + '>' + 'Click here for more Info' + '</a>');
-                   $('#loc').text(comp_loc);
+                   $('#desc').html('<a href=' + array[0].url + '>' + 'Click here for more Info' + '</a>');
+                   $('#loc').text(array[0].company.location.name);
     
                 }
     
