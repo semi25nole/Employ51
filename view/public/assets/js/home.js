@@ -1,7 +1,10 @@
+
+
 $(document).ready(function() { //jQuery load page start
 
+   
 
-
+    
     // Getting reference to the job and location inputs //
     var jobInput = $("#job");
     var locationInput = $("#location");
