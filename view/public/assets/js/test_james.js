@@ -3,17 +3,17 @@ $(document).ready(function() {
 
     //change function here to test different things
     //  $(document).on("submit", apiAuth); //authenication
-    //$(document).on("submit", apiDisplay); 
+    $(document).on("submit", apiDisplay);
     //$(document).on("submit", apiUser_Create); 
     //$(document).on("submit", apiUser_Read); 
     //$(document).on("submit", apiUser_Update); 
     //$(document).on("submit", apiUser_Delete); 
     //$(document).on("submit", apiJob_Create); 
-    //$(document).on("submit", apiJob_Read); 
+    // $(document).on("submit", apiJob_Read);
     //$(document).on("submit", apiJob_Update);
     //  $(document).on("submit", apiJob_Delete);
     // $('button').on("click", mySearch('developer', '')); //triggers on page load and button click (?)
-    $(document).on("click", pageRoute_User);
+    // $(document).on("click", pageRoute_User);
 
     var array;
 
@@ -90,7 +90,7 @@ $(document).ready(function() {
     //tests user/hr 'full results (job and user info)
     function apiDisplay() {
         var displayVar = {
-            id: '2'
+            id: '4'
         };
         event.preventDefault(); //crucial to see correct results!
         console.log('sent:');
@@ -278,7 +278,7 @@ $(document).ready(function() {
         // var id = listItemData.id;
 
         //can use above or an object/var(?):
-        var id = 2;
+        var id = 4;
         console.log('sent:');
         console.log(id);
         $.ajax({
@@ -356,23 +356,6 @@ $(document).ready(function() {
     }
 
 
-    //FILE ROUTES
-
-    function pageRoute_User() {
-        event.preventDefault(); //crucial to see correct results!
-        var id = 3;
-        $.ajax({
-            method: "GET",
-            url: "/user" + id
-                // dataType: "json"
-        });
-        // .done(function(data) {
-        //     console.log('received back:');
-        //     console.log(data);
-        //     var myJSON = JSON.stringify(data);
-        //     $('#r').text(myJSON);
-        // });
-    }
 
 
 

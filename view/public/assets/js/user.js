@@ -15,9 +15,9 @@ $(document).ready(function() {
 
 
     //modals
-    $('#applications').on('click', function() {
-        $('#applicationModal').modal('show');
-    });
+    // $('#applications').on('click', function() {
+    //     $('#applicationModal').modal('show');
+    // });
 
     $('#resumes').on('click', function() {
         $('#resumeModal').modal('show');
@@ -28,6 +28,14 @@ $(document).ready(function() {
     });
 
     $('#savedJobs').on('click', function() {
+        //modify modal
+        showUserandJobs(uid);
+
+
+
+
+
+
         $('#savedJobModal').modal('show');
     });
 
@@ -43,6 +51,29 @@ $(document).ready(function() {
     function close() {
         $('#deleteModal').hide();
     };
+
+
+
+
+
+
+
+    //custom functions
+    //tests user/hr 'full results (job and user info)
+    function showUserandJobs(idIn) {
+        var displayVar = {
+            id: idIn
+        };
+        event.preventDefault(); //crucial to see correct results!
+        console.log('sent:');
+        console.log(displayVar);
+        $.post("/api/display", displayVar, function(data) {
+            console.log('received back:');
+            console.log(data);
+            var myJSON = JSON.stringify(data);
+            $('#r').text(myJSON);
+        }, "json");
+    }
 
 
     console.log(uid);
