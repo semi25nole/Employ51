@@ -70,10 +70,6 @@ body {
     width: max-content;
 }
 
-#resumeOptions {
-    background-color: yellowgreen;
-}
-
 #resumes {
     border: yellowgreen;
     background-color: inherit;
@@ -198,4 +194,12 @@ footer {
     bottom: 0px;
     top: 600px;
     left: 625px;
+}
+
+#resumeOptions {
+    position: left;
+    left: 650px;
+    background-color: inherit;
+    border: inherit;
+    color: #007bff;
 }
