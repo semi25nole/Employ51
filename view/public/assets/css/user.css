@@ -1,0 +1,202 @@
+body {
+    background-image: url(../images/employee-lunch-break-min.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.wrapper {
+    /* text-align: center; */
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.nav {
+    background-color: black;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    height: 82px;
+}
+
+#navSearch {
+    background-color: #795548;
+    height: 67px;
+}
+
+#userTitle {
+    font-family: 'Coiny', cursive;
+    color: white;
+    /*border-width: 6px;
+    border-color: black;*/
+    font-size: xx-large;
+    /* text-align: center; */
+    /*position: absolute;
+    left: 10px;
+    top: 10px;*/
+    text-shadow: 2px 2px black;
+}
+
+#userMotto {
+    font-family: 'Indie Flower', cursive;
+    color: #ffc107;
+    /* font-size: xx-large; */
+    /* text-align: center; */
+    text-shadow: 2px 2px black;
+    /* padding-left: 350px; */
+    /* width: auto; */
+    position: absolute;
+    top: 42px;
+    left: 31px;
+}
+
+#applications {
+    /* text-align: left; */
+    position: absolute;
+    left: 415px;
+    /* text-align: left; */
+    background-color: inherit;
+    border: inherit;
+    color: #007bff;
+}
+
+#myResumes {
+    position: absolute;
+    left: 388px;
+    /* top: -7px; */
+    width: max-content;
+}
+
+#resumes {
+    border: yellowgreen;
+    background-color: inherit;
+}
+
+#uploadMyResume {
+    border: yellowgreen;
+    background-color: inherit;
+}
+
+#uploadForm {
+    background-color: burlywood;
+}
+
+#uploadLabel {
+    font-family: 'Indie Flower', cursive;
+    padding: 10px;
+    color: maroon;
+    width: 230%;
+    font-size: xx-large;
+}
+
+#fileUpload {
+    padding: 10px;
+}
+
+#savedJobs {
+    position: absolute;
+    left: 750px;
+    background-color: inherit;
+    border: inherit;
+    color: #007bff;
+}
+
+#createAccount {
+    /* text-align: left; */
+    position: absolute;
+    left: 990px;
+    /* text-align: left; */
+}
+
+#myAccount {
+    position: absolute;
+    left: 975px;
+    width: max-content;
+}
+
+#dropdownOptions {
+    background-color: yellowgreen;
+}
+
+#userJob {
+    position: relative;
+    top: 20px;
+    left: 430px;
+}
+
+#userLocation {
+    position: relative;
+    left: 652px;
+    top: -18px;
+}
+
+#userSearch {
+    position: relative;
+    left: 870px;
+    top: -54px;
+    color: #ffc107;
+}
+
+.modal {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    bottom: 0;
+    left: 70px;
+    z-index: 10040;
+    overflow: auto;
+    overflow-y: auto;
+}
+
+.modal-header {
+    background-color: #795548;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: maroon;
+}
+
+#deleteModal {
+    position: absolute;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    position: relative;
+    left: 110px;
+}
+
+#sadPhoto {
+    height: 300px;
+    border: inherit;
+}
+
+#areYouSure {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+footer {
+    font-family: 'Coiny', cursive;
+    color: black;
+    position: relative;
+    width: 50%;
+    bottom: 0px;
+    top: 600px;
+    left: 625px;
+}
+
+#resumeOptions {
+    position: left;
+    left: 650px;
+    background-color: inherit;
+    border: inherit;
+    color: #007bff;
+}
