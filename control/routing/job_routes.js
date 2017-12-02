@@ -50,7 +50,7 @@ module.exports = function(app) {
     */
 
     app.get("/api/job/:id", function(req, res) {
-        db.Job.findOne({
+        db.Job.findAll({
             where: {
                 id: req.params.id
             }
